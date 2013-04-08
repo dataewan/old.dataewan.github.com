@@ -7,8 +7,22 @@
         <title>dataewan</title>
         <link>http://dataewan.github.io</link>
         <language>en-uk</language>
-        <pubDate>Mon, 08 Apr 2013 21:01:49 GMT</pubDate>
+        <pubDate>Mon, 08 Apr 2013 22:31:16 GMT</pubDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        
+            
+                <item>
+                    <title>Downloading the D3 documentation</title>
+                    <link>http://dataewan.github.io/2013-04-08/local-install-of-d3-wiki.html</link>
+                    <pubDate>2013-04-08</pubDate>
+                    <description>
+                        I had a few long train journeys recently. Wanting to make best use of my time, I searched for a way to download the D3 wiki. I found <a class="reference external" href="https://groups.google.com/forum/?fromgroups=...
+                    </description>
+                    <guid>
+                    http://dataewan.github.io/2013-04-08/local-install-of-d3-wiki.html
+                    </guid>
+                </item>
+            
         
             
                 <item>
