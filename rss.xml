@@ -2,21 +2,24 @@
 
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <atom:link href="/rss.xml" rel="self"
-            type="application/rss+xml" />
+        <atom:link href="/rss.xml" rel="self" type="application/rss+xml" />
         <title>dataewan</title>
         <link>http://dataewan.github.io</link>
         <language>en-uk</language>
-        <pubDate>Mon, 08 Apr 2013 22:31:16 GMT</pubDate>
+        <pubDate>Wed, 10 Apr 2013 21:48:19 GMT</pubDate>
+        <description>Data analysis, crunching and visualisation from dataewan</description>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         
             
                 <item>
                     <title>Downloading the D3 documentation</title>
                     <link>http://dataewan.github.io/2013-04-08/local-install-of-d3-wiki.html</link>
-                    <pubDate>2013-04-08</pubDate>
+                    <pubDate>Mon, 08 Apr 2013 00:00:00 GMT</pubDate>
                     <description>
-                        I had a few long train journeys recently. Wanting to make best use of my time, I searched for a way to download the D3 wiki. I found <a class="reference external" href="https://groups.google.com/forum/?fromgroups=...
+                        <![CDATA[
+                        Downloading the D3 documentation
+
+                        ]]>
                     </description>
                     <guid>
                     http://dataewan.github.io/2013-04-08/local-install-of-d3-wiki.html
@@ -28,9 +31,12 @@
                 <item>
                     <title>What's so good about text files?</title>
                     <link>http://dataewan.github.io/2013-04-04/whats-so-good-about-text-files.html</link>
-                    <pubDate>2013-04-04</pubDate>
+                    <pubDate>Thu, 04 Apr 2013 00:00:00 GMT</pubDate>
                     <description>
-                        Say I have a choice between two tools: one that holds its configuration, data and content in flat text files, or one that has a lovely polished user interface and hides the complexity from me. I'll almost always select the tool that uses text files and is more difficult to configure. I don't thin...
+                        <![CDATA[
+                        What's so good about text files?
+
+                        ]]>
                     </description>
                     <guid>
                     http://dataewan.github.io/2013-04-04/whats-so-good-about-text-files.html
@@ -42,9 +48,12 @@
                 <item>
                     <title>First post</title>
                     <link>http://dataewan.github.io/2013-03-17/first-post.html</link>
-                    <pubDate>2013-03-17</pubDate>
+                    <pubDate>Sun, 17 Mar 2013 00:00:00 GMT</pubDate>
                     <description>
-                        Hello! I'm planning to write this blog about acquiring a usable dataset, crunching (analysing) this data and then presenting analysis to other people. I'm very interested in this field and I think these three threads are all very exciting. As a first post I'll put a quote from Richa...
+                        <![CDATA[
+                        First post
+
+                        ]]>
                     </description>
                     <guid>
                     http://dataewan.github.io/2013-03-17/first-post.html
