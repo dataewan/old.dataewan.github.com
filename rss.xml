@@ -6,9 +6,26 @@
         <title>dataewan</title>
         <link>http://dataewan.github.io</link>
         <language>en-uk</language>
-        <pubDate>Wed, 10 Apr 2013 21:48:19 GMT</pubDate>
+        <pubDate>Sun, 14 Apr 2013 19:47:11 GMT</pubDate>
         <description>Data analysis, crunching and visualisation from dataewan</description>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        
+            
+                <item>
+                    <title>Making your own deck.js themes</title>
+                    <link>http://dataewan.github.io/2013-04-10/making-deck-js-themes.html</link>
+                    <pubDate>Wed, 10 Apr 2013 00:00:00 GMT</pubDate>
+                    <description>
+                        <![CDATA[
+                        Making your own deck.js themes
+
+                        ]]>
+                    </description>
+                    <guid>
+                    http://dataewan.github.io/2013-04-10/making-deck-js-themes.html
+                    </guid>
+                </item>
+            
         
             
                 <item>
