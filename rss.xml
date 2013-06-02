@@ -6,9 +6,26 @@
         <title>dataewan</title>
         <link>http://dataewan.github.io</link>
         <language>en-uk</language>
-        <pubDate>Sun, 14 Apr 2013 19:47:11 GMT</pubDate>
+        <pubDate>Sun, 02 Jun 2013 22:33:02 GMT</pubDate>
         <description>Data analysis, crunching and visualisation from dataewan</description>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        
+            
+                <item>
+                    <title>Create reproducible analysis using dexy</title>
+                    <link>http://dataewan.github.io/2013-06-01/using-deckjs-and-dexy.html</link>
+                    <pubDate>Sat, 01 Jun 2013 00:00:00 GMT</pubDate>
+                    <description>
+                        <![CDATA[
+                        Create reproducible analysis using dexy
+
+                        ]]>
+                    </description>
+                    <guid>
+                    http://dataewan.github.io/2013-06-01/using-deckjs-and-dexy.html
+                    </guid>
+                </item>
+            
         
             
                 <item>

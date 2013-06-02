@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>
+    
+Dataewan - Create reproducible analysis using dexy
+
+  </title>
+  <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="/css/print.css" media="print" rel="stylesheet" type="text/css" />
+  <!--[if IE]>
+      <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39372029-1']);
+    _gaq.push(['_setDomainName', 'github.com']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+</head>
+<body>
+  <header>
+  
+  <h1 id="main-heading">
+    <a href="/">Dataewan</a>
+  </h1>
+    <ul>
+        <li>
+            <a href="https://github.com/dataewan">Github</a>
+        </li>
+        <li>
+            <a href="https://twitter.com/dataewan">Twitter</a>
+        </li>
+        <li>
+            <a href="/about.html">About Me</a>
+        </li>
+    </ul>
+  
+  </header>
+
+  <article>
+  
+    <p>I've been experimenting with creating reproducible analysis.
+I <em>really</em> like tools like <a class="reference external" href="http://yihui.name/knitr/">knitr</a> and <a class="reference external" href="http://www.stat.uni-muenchen.de/~leisch/Sweave/">sweave</a> for R.
+You combine your analysis and writeup in one place,
+which means your writeup always contains your most current results.
+No more kicking yourself for forgetting to update a number in your writeup when the data changes.</p>
+<p>These tools are great,
+but are designed pretty heavily around R.
+It is possible to <a class="reference external" href="https://github.com/yihui/knitr-examples/blob/master/023-engine-python.Rmd">use them with other languages</a>,
+but it doesn't work quite as perfectly.
+I want something that is language agnostic.
+I'd also like it to be able to make lots of different kinds of documents,
+a really flexible documentation tool for any language would be lovely.</p>
+<p>I was googling for phrases like <em>&quot;knitr for python&quot;</em> or <em>&quot;sweave for python&quot;</em>.
+I found <a class="reference external" href="http://stackoverflow.com/questions/5032711/sweave-with-non-r-code-chunks/5033941#5033941">this answer</a> on Stackoverflow which suggests using a tool called <a class="reference external" href="http://www.dexy.it/">dexy</a>.</p>
+<blockquote class="epigraph">
+<p>The new new thing (for multi-language, multi-format) docs may be dexy.it which for example these guys at opengamma.org use as the backend.</p>
+<p>Ana, who is behind dexy, is also giving a lot of talks about it so also look at the dexy blog.</p>
+<p class="attribution">&mdash;Dirk Eddelbuettel</p>
+</blockquote>
+<div class="section" id="why-dexy-what-is-it-good-at">
+<h1>Why dexy? What is it good at?</h1>
+<p>Dexy takes code and passes it through <a class="reference external" href="http://www.dexy.it/filters/">filters</a>.
+There are filters for executing python, R, shell scripts, converting latex to pdf, serving your documents as simple web pages;
+there are filters for pretty much everything,
+and it is also possible to write your own.
+This satisfies my requirement for the tool to be language agnostic.</p>
+<p>One of the most common filters you use is the <tt class="docutils literal">jinja</tt> filter that passes data to a jinja template.
+Dexy also comes with code highlighting (using pygments) and code spitting (using idiopidae).
+This makes it really flexible for creating well documented code and analysis.</p>
+<p>It is a really versatile tool that can do the following:</p>
+<blockquote>
+<ul class="simple">
+<li>Act as a <tt class="docutils literal">make</tt> tool for your analysis</li>
+<li>Pass your markup through a template to make a nice final document</li>
+<li>You can also make some very nice documentation for your code, syntax highlighted with descriptions of what is going on in between</li>
+</ul>
+</blockquote>
+<div class="section" id="using-dexy-python-and-jinja-together">
+<h2>Using dexy, python and jinja together</h2>
+<p>When I started using dexy to write up analysis,
+I used a <tt class="docutils literal">dexy.yaml</tt> configuration that looked a bit like this:</p>
+<div class="highlight"><pre><span class="n">index</span><span class="o">.</span><span class="n">html</span><span class="o">|</span><span class="n">jinja</span><span class="p">:</span>
+    <span class="o">-</span> <span class="o">.</span><span class="n">py</span><span class="o">|</span><span class="n">py</span>
+</pre></div>
+<p>This takes the index.html document and passes it through the jinja template filter.
+All the python files in the directory (the <tt class="docutils literal">.py</tt> bit) are passed through the <tt class="docutils literal">py</tt> filter.
+This simply runs each script,
+storing the standard output of each script in a dictionary that is available to the jinja template.</p>
+<p>For example,
+if I had the following script in my directory:</p>
+<p>(<tt class="docutils literal">fourtimesfive.py</tt>)</p>
+<div class="highlight"><pre><span class="k">print</span> <span class="mi">4</span> <span class="o">*</span> <span class="mi">5</span>
+</pre></div>
+<p>I could access this in my jinja template using a line like this:</p>
+<div class="highlight"><pre><span class="x">Four times five is </span><span class="cp">{{</span> <span class="nv">d</span><span class="o">[</span><span class="s1">&#39;fourtimesfive.py|py&#39;</span><span class="o">]</span> <span class="cp">}}</span><span class="x"></span>
+</pre></div>
+</div>
+<div class="section" id="passing-complex-data-to-dexy">
+<h2>Passing complex data to dexy</h2>
+<p>This gets tiresome quite quickly.
+Every result you want to pass to the jinja template has to come from a separate script.
+You end up with a directory full of wee scripts that all do approximately the same thing.</p>
+<p>To get around this,
+make your scripts print JSON formatted data to standard output.
+You can then get access to more complex data structures in your template by doing things like this:</p>
+<p>(<tt class="docutils literal">fourtimesfive.py</tt>)</p>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">json</span>
+
+<span class="n">output</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="n">output</span><span class="p">[</span><span class="s">&#39;fourtimesfive&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">4</span><span class="o">*</span><span class="mi">5</span>
+<span class="n">output</span><span class="p">[</span><span class="s">&#39;sixtimesseven&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">6</span><span class="o">*</span><span class="mi">7</span>
+
+<span class="k">print</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+</pre></div>
+<div class="highlight"><pre><span class="x">Four times five is</span>
+<span class="cp">{{</span> <span class="nv">d</span><span class="o">[</span><span class="s1">&#39;fourtimesfive.py|py&#39;</span><span class="o">]</span><span class="nv">.from_json</span><span class="o">()</span><span class="nv">.fourtimesfive</span> <span class="cp">}}</span><span class="x"></span>
+
+<span class="x">Six times seven is</span>
+<span class="cp">{{</span> <span class="nv">d</span><span class="o">[</span><span class="s1">&#39;fourtimesfive.py|py&#39;</span><span class="o">]</span><span class="nv">.from_json</span><span class="o">()</span><span class="nv">.sixtimesseven</span> <span class="cp">}}</span><span class="x"></span>
+</pre></div>
+<p>See <a class="reference external" href="https://github.com/ananelson/dexy-feature-examples/tree/master/dexy_feature_examples/reading-json">this link</a> for a documented example of doing this from Ana, the author of dexy.</p>
+<p>Doing this makes it much easier to present your analysis.
+You make one script that does the number crunching and outputs JSON.
+You call this script using dexy.
+Then you pass this JSON output to a jinja template:
+creating HTML, LaTeX, Markdown, rST, any format of document you like.</p>
+<p>I've <a class="reference external" href="https://github.com/dataewan/deck.js.and.dexy">made my own analysis</a> example that uses python and dexy to create a reproducible slide deck with <a class="reference external" href="http://imakewebthings.com/deck.js/">deck.js</a>.
+You change one variable and it creates a new set of results based on that parameter.</p>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p>One thing that tripped me up.</p>
+<p class="last">Say your script doesn't output to stdout,
+instead it writes the output to a JSON file,
+you need to change your dexy.yaml file to use the <tt class="docutils literal"><span class="pre">add-new-files</span></tt> option like this.</p>
+</div>
+<div class="highlight"><pre><span class="n">example</span><span class="o">.</span><span class="n">markdown</span><span class="o">|</span><span class="n">jinja</span><span class="o">|</span><span class="n">markdown</span><span class="o">|</span><span class="n">easyhtml</span><span class="p">:</span>
+    <span class="o">-</span> <span class="n">example</span><span class="o">.</span><span class="n">py</span><span class="o">|</span><span class="n">py</span><span class="p">:</span>
+               <span class="o">-</span> <span class="n">py</span><span class="p">:</span> <span class="p">{</span> <span class="n">add</span><span class="o">-</span><span class="n">new</span><span class="o">-</span><span class="n">files</span><span class="p">:</span> <span class="bp">True</span> <span class="p">}</span>
+</pre></div>
+</div>
+</div>
+
+
+  </article>
+
+  <footer id="footer">
+  <div>
+    Made using <a href="https://github.com/mythmon/wok">wok</a>.
+  </div>
+  </footer>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  <!-- the scripts are in the metadata of the markup files -->
+  
+</body>
+</html>
