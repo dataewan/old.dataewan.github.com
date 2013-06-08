@@ -6,9 +6,26 @@
         <title>dataewan</title>
         <link>http://dataewan.github.io</link>
         <language>en-uk</language>
-        <pubDate>Sat, 08 Jun 2013 10:26:51 GMT</pubDate>
+        <pubDate>Sat, 08 Jun 2013 17:52:18 GMT</pubDate>
         <description>Data analysis, crunching and visualisation from dataewan</description>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        
+            
+                <item>
+                    <title>Writing up analysis</title>
+                    <link>http://dataewan.github.io/2013-06-08/writing-up-analysis.html</link>
+                    <pubDate>Sat, 08 Jun 2013 00:00:00 GMT</pubDate>
+                    <description>
+                        <![CDATA[
+                        Writing up analysis
+
+                        ]]>
+                    </description>
+                    <guid>
+                    http://dataewan.github.io/2013-06-08/writing-up-analysis.html
+                    </guid>
+                </item>
+            
         
             
                 <item>
