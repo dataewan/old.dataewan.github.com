@@ -6,7 +6,7 @@
         <title>dataewan</title>
         <link>http://dataewan.github.io</link>
         <language>en-uk</language>
-        <pubDate>Mon, 31 Mar 2014 18:48:12 GMT</pubDate>
+        <pubDate>Sat, 03 May 2014 16:41:57 GMT</pubDate>
         <description>Data analysis, crunching and visualisation from dataewan</description>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         
@@ -131,6 +131,23 @@
                     </description>
                     <guid>
                     http://dataewan.github.io/2013-03-17/first-post.html
+                    </guid>
+                </item>
+            
+        
+            
+                <item>
+                    <title>Nice LaTeX tables</title>
+                    <link>http://dataewan.github.io/2014-05-03/nice-latex-tables.html</link>
+                    <pubDate>Sat, 03 May 2014 00:00:00 GMT</pubDate>
+                    <description>
+                        <![CDATA[
+                        Nice LaTeX tables
+
+                        ]]>
+                    </description>
+                    <guid>
+                    http://dataewan.github.io/2014-05-03/nice-latex-tables.html
                     </guid>
                 </item>
             

@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>
+    
+Dataewan - Nice LaTeX tables
+
+  </title>
+  <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="/css/print.css" media="print" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="/css/sass/chart.css" type="text/css" />
+  <!--[if IE]>
+      <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39372029-1']);
+  _gaq.push(['_setDomainName', 'dataewan.github.io']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <header>
+  
+  <h1 id="main-heading">
+    <a href="/">Dataewan</a>
+  </h1>
+    <ul>
+        <li>
+            <a href="https://github.com/dataewan">Github</a>
+        </li>
+        <li>
+            <a href="https://twitter.com/dataewan">Twitter</a>
+        </li>
+        <li>
+            <a href="/about.html">About Me</a>
+        </li>
+    </ul>
+  
+  </header>
+
+  <article>
+  
+    <p>Here I'm collecting together my notes on how to make nice, readable LaTeX tables.</p>
+<div class="section" id="overall-notes">
+<h1>Overall notes</h1>
+<blockquote>
+<ul class="simple">
+<li>Use the <a class="reference external" href="http://www.ctan.org/pkg/booktabs">booktabs</a> package.</li>
+<li>Read the <a class="reference external" href="http://mirror.ox.ac.uk/sites/ctan.org/macros/latex/contrib/booktabs/booktabs.pdf">booktabs documentation</a>. Opinionated documentation with a few very good guidelines.</li>
+<li>Read <a class="reference external" href="http://www.tug.org/TUGboat/tb28-3/tb90hoeppner.pdf">Typesetting tables with LaTeX</a>, which explains many of the strange looking things you have to do to get a nice table.</li>
+<li>Use <tt class="docutils literal">&#64;{}</tt> in your column headings.</li>
+<li>Don't use vertical lines to separate the columns in the tables.</li>
+<li>Put in the minimum number of horizontal lines to make your table legible. Use the horizontal lines the <cite>booktabs</cite> package gives you.</li>
+<li>Prefer whitespace to horizontal lines where it makes sense.</li>
+<li>Use the <a class="reference external" href="ftp://ftp.tex.ac.uk/ctan%3A/macros/latex/exptl/siunitx/siunitx.pdf">siunitx</a> package to align numbers. Use left alignment for everything else.</li>
+</ul>
+</blockquote>
+<p>I go into more detail on these points below.</p>
+<div class="section" id="use-in-column-heading-definitions">
+<h2>Use <tt class="docutils literal">&#64;{}</tt> in column heading definitions</h2>
+<p>Putting the <tt class="docutils literal">&#64;</tt> sign in your column heading definitions tells LaTex that you want to replace the space between those columns with something else.</p>
+<p>The following code</p>
+<div class="highlight"><pre><span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>lll<span class="nb">}</span>
+<span class="s">$</span><span class="nv">\alpha</span><span class="s">$</span> <span class="nb">&amp;</span> <span class="s">$</span><span class="m">1</span><span class="s">$</span> <span class="nb">&amp;</span> a<span class="k">\\</span>
+<span class="s">$</span><span class="nv">\beta</span><span class="s">$</span> <span class="nb">&amp;</span> <span class="s">$</span><span class="m">2</span><span class="s">$</span> <span class="nb">&amp;</span> b<span class="k">\\</span>
+<span class="s">$</span><span class="nv">\gamma</span><span class="s">$</span> <span class="nb">&amp;</span> <span class="s">$</span><span class="m">3</span><span class="s">$</span> <span class="nb">&amp;</span> c<span class="k">\\</span>
+<span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+</pre></div>
+<p>Makes this table.</p>
+<img alt="/img/latex-tables/normal_table.png" src="/img/latex-tables/normal_table.png" style="width: 200px;" />
+<p>If I use the <tt class="docutils literal">&#64;</tt> commands, I can change the column separators to anything I like.
+In this case I'll make them commas (for whatever reason).</p>
+<div class="highlight"><pre><span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>l@<span class="nb">{</span>,<span class="nb">}</span>l@<span class="nb">{</span>,<span class="nb">}</span>l<span class="nb">}</span>
+<span class="s">$</span><span class="nv">\alpha</span><span class="s">$</span> <span class="nb">&amp;</span> <span class="s">$</span><span class="m">1</span><span class="s">$</span> <span class="nb">&amp;</span> a<span class="k">\\</span>
+<span class="s">$</span><span class="nv">\beta</span><span class="s">$</span> <span class="nb">&amp;</span> <span class="s">$</span><span class="m">2</span><span class="s">$</span> <span class="nb">&amp;</span> b<span class="k">\\</span>
+<span class="s">$</span><span class="nv">\gamma</span><span class="s">$</span> <span class="nb">&amp;</span> <span class="s">$</span><span class="m">3</span><span class="s">$</span> <span class="nb">&amp;</span> c<span class="k">\\</span>
+<span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+</pre></div>
+<p>makes this table.</p>
+<img alt="/img/latex-tables/comma_table.png" src="/img/latex-tables/comma_table.png" style="width: 200px;" />
+<p>The most common reason for doing this is to remove leading and trailing whitespace from your table columns.
+The only difference between the following two tables is that the second one has <tt class="docutils literal">&#64;{}</tt> before the first column and after the last column.
+Note the different amount of whitespace around the two tables.</p>
+<img alt="/img/latex-tables/table_alignment.png" src="/img/latex-tables/table_alignment.png" />
+</div>
+<div class="section" id="lines-and-whitespace">
+<h2>Lines and whitespace</h2>
+<p>The temptation with LaTeX tables is to put in lots of gridlines to make the table stand out.</p>
+<div class="highlight"><pre><span class="k">\begin</span><span class="nb">{</span>table<span class="nb">}</span>[h]
+<span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>@<span class="nb">{}</span>|l|l|r|@<span class="nb">{}}</span>
+<span class="k">\hline</span>
+<span class="k">\textbf</span><span class="nb">{</span>Country<span class="nb">}</span>        <span class="nb">&amp;</span> <span class="k">\textbf</span><span class="nb">{</span>First-level country subdivision<span class="nb">}</span>  <span class="nb">&amp;</span> <span class="k">\textbf</span><span class="nb">{</span>GDP<span class="nb">}</span>     <span class="k">\\</span>
+<span class="k">\hline</span>
+United States  <span class="nb">&amp;</span> California                       <span class="nb">&amp;</span> 2003479 <span class="k">\\</span>
+United States  <span class="nb">&amp;</span> Texas                            <span class="nb">&amp;</span> 1397369 <span class="k">\\</span>
+United States  <span class="nb">&amp;</span> New York                         <span class="nb">&amp;</span> 1205930 <span class="k">\\</span>
+United States  <span class="nb">&amp;</span> Florida                          <span class="nb">&amp;</span> 777164  <span class="k">\\</span>
+<span class="k">\hline</span>
+China          <span class="nb">&amp;</span> Guangdong                        <span class="nb">&amp;</span> 1003746 <span class="k">\\</span>
+China          <span class="nb">&amp;</span> Shandong                         <span class="nb">&amp;</span> 882973  <span class="k">\\</span>
+China          <span class="nb">&amp;</span> Jiangsu                          <span class="nb">&amp;</span> 55270   <span class="k">\\</span>
+<span class="k">\hline</span>
+United Kingdom <span class="nb">&amp;</span> England                          <span class="nb">&amp;</span> 1998493 <span class="k">\\</span>
+<span class="k">\hline</span>
+Japan          <span class="nb">&amp;</span> Tokyo                            <span class="nb">&amp;</span> 930000  <span class="k">\\</span>
+<span class="k">\hline</span>
+France         <span class="nb">&amp;</span> IDF Paris Region (Ile-de-France) <span class="nb">&amp;</span> 845195 <span class="k">\\</span>
+<span class="k">\hline</span>
+<span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>table<span class="nb">}</span>
+</pre></div>
+<p>Creates a table a table like this.</p>
+<img alt="/img/latex-tables/lines_table.png" src="/img/latex-tables/lines_table.png" />
+<p>I prefer more minimal tables,
+which conentrate on the data.
+Maximising the <a class="reference external" href="http://www.infovis-wiki.net/index.php/Data-Ink_Ratio">data ink ratio</a>, as Edward Tufte would put it.</p>
+<p>I've taken the following steps.</p>
+<blockquote>
+<ol class="arabic simple">
+<li>Remove all vertical lines</li>
+<li>Remove all horizontal lines, except for the one between the headers and the data</li>
+<li>Replace the <tt class="docutils literal">\hline</tt> between groups with <tt class="docutils literal">\addlinespace</tt>. This is something that the <tt class="docutils literal">booktabs</tt> package gives you, which places whitespace between lines.</li>
+<li>Remove the bolding from the headings</li>
+<li>Remove duplicate row titles</li>
+</ol>
+</blockquote>
+<div class="highlight"><pre><span class="k">\begin</span><span class="nb">{</span>table<span class="nb">}</span>[h]
+<span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>@<span class="nb">{}</span>llr@<span class="nb">{}}</span>
+
+Country        <span class="nb">&amp;</span> First-level country subdivision  <span class="nb">&amp;</span> GDP     <span class="k">\\</span>
+<span class="k">\midrule</span>
+United States  <span class="nb">&amp;</span> California                       <span class="nb">&amp;</span> 2003479 <span class="k">\\</span>
+               <span class="nb">&amp;</span> Texas                            <span class="nb">&amp;</span> 1397369 <span class="k">\\</span>
+               <span class="nb">&amp;</span> New York                         <span class="nb">&amp;</span> 1205930 <span class="k">\\</span>
+               <span class="nb">&amp;</span> Florida                          <span class="nb">&amp;</span> 777164  <span class="k">\\</span>
+<span class="k">\addlinespace</span>
+China          <span class="nb">&amp;</span> Guangdong                        <span class="nb">&amp;</span> 1003746 <span class="k">\\</span>
+               <span class="nb">&amp;</span> Shandong                         <span class="nb">&amp;</span> 882973  <span class="k">\\</span>
+               <span class="nb">&amp;</span> Jiangsu                          <span class="nb">&amp;</span> 55270   <span class="k">\\</span>
+<span class="k">\addlinespace</span>
+United Kingdom <span class="nb">&amp;</span> England                          <span class="nb">&amp;</span> 1998493 <span class="k">\\</span>
+<span class="k">\addlinespace</span>
+Japan          <span class="nb">&amp;</span> Tokyo                            <span class="nb">&amp;</span> 930000  <span class="k">\\</span>
+<span class="k">\addlinespace</span>
+France         <span class="nb">&amp;</span> IDF Paris Region (Ile-de-France) <span class="nb">&amp;</span> 845195 <span class="k">\\</span>
+<span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>table<span class="nb">}</span>
+</pre></div>
+<p>Gives a table like this one:</p>
+<img alt="/img/latex-tables/nolinetable.png" src="/img/latex-tables/nolinetable.png" />
+<p>Much nicer in my opinion.</p>
+</div>
+<div class="section" id="use-siunitx-for-numeric-alignment">
+<h2>Use <tt class="docutils literal">siunitx</tt> for numeric alignment</h2>
+<p>The final thing that I do is use the <tt class="docutils literal">siunitx</tt> package to align my numbers in tables.
+It provides a new option for the column headings -- <tt class="docutils literal">S</tt> -- which you use instead of l, r, c to align numeric values.
+The reason for doing this is that it lines up all the decimal places and deals equally well with very large and very small numbers.</p>
+<p>If you want to tell the package to ignore any fields, put the field in curly brackets (<tt class="docutils literal">{}</tt>).
+This is useful for column headings.</p>
+<div class="highlight"><pre><span class="k">\begin</span><span class="nb">{</span>table<span class="nb">}</span>[h]
+<span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>@<span class="nb">{}</span>llS@<span class="nb">{}}</span>
+
+<span class="c">% note the headings are in curly brackets</span>
+<span class="nb">{</span>Country<span class="nb">}</span>        <span class="nb">&amp;</span> <span class="nb">{</span>Category<span class="nb">}</span>  <span class="nb">&amp;</span> <span class="nb">{</span>Number<span class="nb">}</span>     <span class="k">\\</span>
+<span class="k">\midrule</span>
+United States  <span class="nb">&amp;</span> <span class="s">$</span><span class="nv">\alpha</span><span class="s">$</span>                       <span class="nb">&amp;</span> 91.2 <span class="k">\%</span> <span class="k">\\</span>
+               <span class="nb">&amp;</span> <span class="s">$</span><span class="nv">\delta</span><span class="s">$</span>                       <span class="nb">&amp;</span> 0.3020 <span class="k">\\</span>
+               <span class="nb">&amp;</span> <span class="s">$</span><span class="nv">\gamma</span><span class="s">$</span>                       <span class="nb">&amp;</span> 1205930 <span class="k">\\</span>
+               <span class="nb">&amp;</span> <span class="s">$</span><span class="nv">\sigma</span><span class="s">$</span>                       <span class="nb">&amp;</span> 1.4<span class="k">\%</span>  <span class="k">\\</span>
+<span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>table<span class="nb">}</span>
+</pre></div>
+<p>Gives a table like this one,
+where all the numbers are correctly aligned.</p>
+<img alt="/img/latex-tables/aligned_numbers.png" src="/img/latex-tables/aligned_numbers.png" />
+<p><tt class="docutils literal">siunitx</tt> provides a lot more functionality than this,
+dealing with scientific notation and units.
+I've not had to learn about that side of things yet.</p>
+</div>
+</div>
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'dataewan'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  </article>
+
+  <footer id="footer">
+  <div>
+    Made using <a href="https://github.com/mythmon/wok">wok</a>.
+  </div>
+  </footer>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+
+  <!-- the scripts are in the metadata of the markup files -->
+  
+</body>
+</html>
