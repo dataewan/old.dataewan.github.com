@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data-verbs on dataewan</title>
+    <link>http://dataewan.github.io/data-verb/</link>
+    <description>Recent content in Data-verbs on dataewan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 13 Mar 2016 13:12:12 +0000</lastBuildDate>
+    <atom:link href="http://dataewan.github.io/data-verb/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Pandas assign function</title>
+      <link>http://dataewan.github.io/data-verb/assign/</link>
+      <pubDate>Sun, 13 Mar 2016 13:12:12 +0000</pubDate>
+      
+      <guid>http://dataewan.github.io/data-verb/assign/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.assign.html&#34;&gt;assign&lt;/a&gt;
+lets you put new columns on the dataframe,
+or assign new values to the old ones.&lt;/p&gt;
+
+&lt;p&gt;This example makes a new column in the dataframe &lt;code&gt;avgsegment&lt;/code&gt; by dividing one column &lt;code&gt;land_border_length&lt;/code&gt;
+in the dataframe by another &lt;code&gt;number_borders&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;(
+    clean
+    .assign(avgsegment = clean.land_border_length / clean.number_borders)
+)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pandas drop function</title>
+      <link>http://dataewan.github.io/data-verb/drop/</link>
+      <pubDate>Sun, 13 Mar 2016 13:12:12 +0000</pubDate>
+      
+      <guid>http://dataewan.github.io/data-verb/drop/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pandas.pydata.org/pandas-docs/version/0.17.1/generated/pandas.DataFrame.drop.html&#34;&gt;drop&lt;/a&gt;
+lets you drop particular rows or columns of the dataframe.&lt;/p&gt;
+
+&lt;p&gt;The thing I find this most useful for is removing messy intermediary columns that you don&amp;rsquo;t need any more.
+If you do this, you need to specify that the &lt;code&gt;axis=1&lt;/code&gt; to drop the columns.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;(
+    clean
+    .drop(&#39;land_border_length&#39;, axis = 1)
+)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pandas groupby function</title>
+      <link>http://dataewan.github.io/data-verb/groupby/</link>
+      <pubDate>Sun, 13 Mar 2016 13:12:12 +0000</pubDate>
+      
+      <guid>http://dataewan.github.io/data-verb/groupby/</guid>
+      <description>
+
+&lt;p&gt;This section of the documentation describes what the &lt;code&gt;groupby&lt;/code&gt; function does &lt;a href=&#34;http://pandas.pydata.org/pandas-docs/stable/groupby.html#splitting-an-object-into-groups&#34;&gt;groupby&lt;/a&gt;,
+but it is worth looking at the &lt;a href=&#34;http://pandas.pydata.org/pandas-docs/stable/groupby.html&#34;&gt;whole article&lt;/a&gt; as well.&lt;/p&gt;
+
+&lt;h2 id=&#34;apply:2abd922a2b4a49bee1cbb0d577ae4a7b&#34;&gt;&lt;code&gt;apply&lt;/code&gt;&lt;/h2&gt;
+
+&lt;h2 id=&#34;agg:2abd922a2b4a49bee1cbb0d577ae4a7b&#34;&gt;&lt;code&gt;agg&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://pandas.pydata.org/pandas-docs/stable/groupby.html#aggregation&#34;&gt;agg&lt;/a&gt; performs aggregations on your groupby object.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pandas merge function</title>
+      <link>http://dataewan.github.io/data-verb/merge/</link>
+      <pubDate>Sun, 13 Mar 2016 13:12:12 +0000</pubDate>
+      
+      <guid>http://dataewan.github.io/data-verb/merge/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pandas.pydata.org/pandas-docs/version/0.17.1/generated/pandas.DataFrame.merge.html&#34;&gt;merge&lt;/a&gt;
+is a lot like joining in SQL.
+It lets you combine together different datasets.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&#34;http://pandas.pydata.org/pandas-docs/stable/merging.html&#34;&gt;full documentation&lt;/a&gt; on merging is well worth a read.
+I&amp;rsquo;ll probably write about that at some other point.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pandas pipe function</title>
+      <link>http://dataewan.github.io/data-verb/pipe/</link>
+      <pubDate>Sun, 13 Mar 2016 13:12:12 +0000</pubDate>
+      
+      <guid>http://dataewan.github.io/data-verb/pipe/</guid>
+      <description>&lt;p&gt;Pipes in pandas&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.pipe.html&#34;&gt;pipe&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import statsmodels.formula.api as sm
+
+bb = pd.read_csv(&#39;data/baseball.csv&#39;, index_col=&#39;id&#39;)
+
+(bb.query(&#39;h &amp;gt; 0&#39;)
+   .assign(ln_h = lambda df: np.log(df.h))
+   .pipe((sm.poisson, &#39;data&#39;), &#39;hr ~ ln_h + year + g + C(lg)&#39;)
+   .fit()
+   .summary()
+)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pandas query function</title>
+      <link>http://dataewan.github.io/data-verb/query/</link>
+      <pubDate>Sun, 13 Mar 2016 13:12:12 +0000</pubDate>
+      
+      <guid>http://dataewan.github.io/data-verb/query/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.query.html&#34;&gt;query&lt;/a&gt;
+performs filtering of the dataframe.
+You give it logical expressions,
+and it gives you back the rows that match that expression.&lt;/p&gt;
+
+&lt;p&gt;So this filters my data so that I get the countries with a zero land border length,
+but that also have some neighbours.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;(
+    clean
+    .query(&amp;quot;land_border_length == 0 &amp;amp; number_neighbours &amp;gt; 0&amp;quot;)
+)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pandas rename function</title>
+      <link>http://dataewan.github.io/data-verb/rename/</link>
+      <pubDate>Sun, 13 Mar 2016 13:12:12 +0000</pubDate>
+      
+      <guid>http://dataewan.github.io/data-verb/rename/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pandas.pydata.org/pandas-docs/version/0.17.1/generated/pandas.DataFrame.rename.html&#34;&gt;rename&lt;/a&gt;
+changes the names of the columns in the dataframe.&lt;/p&gt;
+
+&lt;p&gt;The knack here is to pass it a dictionary that contains the names of the columns you want to rename,
+and what the column names should be afterwards like this: &lt;code&gt;{beforeName : afterName}&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;This example changes the name of the &lt;code&gt;country&lt;/code&gt; column to &lt;code&gt;countryname&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;(
+    clean
+    .rename(columns = {&amp;quot;country&amp;quot; : &amp;quot;countryname&amp;quot;})
+)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pandas sort_values function</title>
+      <link>http://dataewan.github.io/data-verb/sort_values/</link>
+      <pubDate>Sun, 13 Mar 2016 13:12:12 +0000</pubDate>
+      
+      <guid>http://dataewan.github.io/data-verb/sort_values/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sort_values.html&#34;&gt;sort_values&lt;/a&gt;
+lets you order your dataframe.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;(
+    clean
+    .sort_values(&#39;land_border_length&#39;, ascending = False)
+)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dataewan</title>
+    <link>http://dataewan.github.io/</link>
+    <description>Recent content on dataewan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 13 Mar 2016 13:12:12 +0000</lastBuildDate>
+    <atom:link href="http://dataewan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Pandas assign function</title>
+      <link>http://dataewan.github.io/data-verb/assign/</link>
+      <pubDate>Sun, 13 Mar 2016 13:12:12 +0000</pubDate>
+      
+      <guid>http://dataewan.github.io/data-verb/assign/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.assign.html&#34;&gt;assign&lt;/a&gt;
+lets you put new columns on the dataframe,
+or assign new values to the old ones.&lt;/p&gt;
+
+&lt;p&gt;This example makes a new column in the dataframe &lt;code&gt;avgsegment&lt;/code&gt; by dividing one column &lt;code&gt;land_border_length&lt;/code&gt;
+in the dataframe by another &lt;code&gt;number_borders&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;(
+    clean
+    .assign(avgsegment = clean.land_border_length / clean.number_borders)
+)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pandas drop function</title>
+      <link>http://dataewan.github.io/data-verb/drop/</link>
+      <pubDate>Sun, 13 Mar 2016 13:12:12 +0000</pubDate>
+      
+      <guid>http://dataewan.github.io/data-verb/drop/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pandas.pydata.org/pandas-docs/version/0.17.1/generated/pandas.DataFrame.drop.html&#34;&gt;drop&lt;/a&gt;
+lets you drop particular rows or columns of the dataframe.&lt;/p&gt;
+
+&lt;p&gt;The thing I find this most useful for is removing messy intermediary columns that you don&amp;rsquo;t need any more.
+If you do this, you need to specify that the &lt;code&gt;axis=1&lt;/code&gt; to drop the columns.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;(
+    clean
+    .drop(&#39;land_border_length&#39;, axis = 1)
+)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pandas groupby function</title>
+      <link>http://dataewan.github.io/data-verb/groupby/</link>
+      <pubDate>Sun, 13 Mar 2016 13:12:12 +0000</pubDate>
+      
+      <guid>http://dataewan.github.io/data-verb/groupby/</guid>
+      <description>
+
+&lt;p&gt;This section of the documentation describes what the &lt;code&gt;groupby&lt;/code&gt; function does &lt;a href=&#34;http://pandas.pydata.org/pandas-docs/stable/groupby.html#splitting-an-object-into-groups&#34;&gt;groupby&lt;/a&gt;,
+but it is worth looking at the &lt;a href=&#34;http://pandas.pydata.org/pandas-docs/stable/groupby.html&#34;&gt;whole article&lt;/a&gt; as well.&lt;/p&gt;
+
+&lt;h2 id=&#34;apply:2abd922a2b4a49bee1cbb0d577ae4a7b&#34;&gt;&lt;code&gt;apply&lt;/code&gt;&lt;/h2&gt;
+
+&lt;h2 id=&#34;agg:2abd922a2b4a49bee1cbb0d577ae4a7b&#34;&gt;&lt;code&gt;agg&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://pandas.pydata.org/pandas-docs/stable/groupby.html#aggregation&#34;&gt;agg&lt;/a&gt; performs aggregations on your groupby object.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pandas merge function</title>
+      <link>http://dataewan.github.io/data-verb/merge/</link>
+      <pubDate>Sun, 13 Mar 2016 13:12:12 +0000</pubDate>
+      
+      <guid>http://dataewan.github.io/data-verb/merge/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pandas.pydata.org/pandas-docs/version/0.17.1/generated/pandas.DataFrame.merge.html&#34;&gt;merge&lt;/a&gt;
+is a lot like joining in SQL.
+It lets you combine together different datasets.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&#34;http://pandas.pydata.org/pandas-docs/stable/merging.html&#34;&gt;full documentation&lt;/a&gt; on merging is well worth a read.
+I&amp;rsquo;ll probably write about that at some other point.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pandas pipe function</title>
+      <link>http://dataewan.github.io/data-verb/pipe/</link>
+      <pubDate>Sun, 13 Mar 2016 13:12:12 +0000</pubDate>
+      
+      <guid>http://dataewan.github.io/data-verb/pipe/</guid>
+      <description>&lt;p&gt;Pipes in pandas&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.pipe.html&#34;&gt;pipe&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import statsmodels.formula.api as sm
+
+bb = pd.read_csv(&#39;data/baseball.csv&#39;, index_col=&#39;id&#39;)
+
+(bb.query(&#39;h &amp;gt; 0&#39;)
+   .assign(ln_h = lambda df: np.log(df.h))
+   .pipe((sm.poisson, &#39;data&#39;), &#39;hr ~ ln_h + year + g + C(lg)&#39;)
+   .fit()
+   .summary()
+)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pandas query function</title>
+      <link>http://dataewan.github.io/data-verb/query/</link>
+      <pubDate>Sun, 13 Mar 2016 13:12:12 +0000</pubDate>
+      
+      <guid>http://dataewan.github.io/data-verb/query/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.query.html&#34;&gt;query&lt;/a&gt;
+performs filtering of the dataframe.
+You give it logical expressions,
+and it gives you back the rows that match that expression.&lt;/p&gt;
+
+&lt;p&gt;So this filters my data so that I get the countries with a zero land border length,
+but that also have some neighbours.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;(
+    clean
+    .query(&amp;quot;land_border_length == 0 &amp;amp; number_neighbours &amp;gt; 0&amp;quot;)
+)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pandas rename function</title>
+      <link>http://dataewan.github.io/data-verb/rename/</link>
+      <pubDate>Sun, 13 Mar 2016 13:12:12 +0000</pubDate>
+      
+      <guid>http://dataewan.github.io/data-verb/rename/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pandas.pydata.org/pandas-docs/version/0.17.1/generated/pandas.DataFrame.rename.html&#34;&gt;rename&lt;/a&gt;
+changes the names of the columns in the dataframe.&lt;/p&gt;
+
+&lt;p&gt;The knack here is to pass it a dictionary that contains the names of the columns you want to rename,
+and what the column names should be afterwards like this: &lt;code&gt;{beforeName : afterName}&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;This example changes the name of the &lt;code&gt;country&lt;/code&gt; column to &lt;code&gt;countryname&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;(
+    clean
+    .rename(columns = {&amp;quot;country&amp;quot; : &amp;quot;countryname&amp;quot;})
+)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pandas sort_values function</title>
+      <link>http://dataewan.github.io/data-verb/sort_values/</link>
+      <pubDate>Sun, 13 Mar 2016 13:12:12 +0000</pubDate>
+      
+      <guid>http://dataewan.github.io/data-verb/sort_values/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sort_values.html&#34;&gt;sort_values&lt;/a&gt;
+lets you order your dataframe.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;(
+    clean
+    .sort_values(&#39;land_border_length&#39;, ascending = False)
+)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Writing tidy pandas</title>
+      <link>http://dataewan.github.io/post/pandas-magrittr/</link>
+      <pubDate>Sun, 06 Dec 2015 12:02:06 +0000</pubDate>
+      
+      <guid>http://dataewan.github.io/post/pandas-magrittr/</guid>
+      <description>
+
+&lt;p&gt;I&amp;rsquo;ve been writing &lt;code&gt;pandas&lt;/code&gt; code extensively over the past few months.
+I&amp;rsquo;ve collected a few tips for making your pandas neater,
+easier to understand,
+and make your life a little happier.&lt;/p&gt;
+
+&lt;h1 id=&#34;method-chaining-in-pandas:d2b40886fd042ce815011ab74a9d0a94&#34;&gt;Method chaining in pandas&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;Method chaining&lt;/em&gt; in pandas lets you apply multiple functions to your dataframe.
+If you&amp;rsquo;ve used &lt;code&gt;dplyr&lt;/code&gt; in R at all,
+you&amp;rsquo;ll recognise this pattern.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://pandas.pydata.org/pandas-docs/stable/basics.html#tablewise-function-application&#34;&gt;This section&lt;/a&gt;
+of the official documentation describes how it works.
+The example there is quite short, so you can easily miss how important an idea this is.
+I&amp;rsquo;ve got an &lt;a href=&#34;https://github.com/dataewan/country-borders-wikipedia/blob/master/Land%20borders%20from%20wikipedia.ipynb&#34;&gt;ipython notebook&lt;/a&gt; that uses this idea of method chaining extensively.&lt;/p&gt;
+
+&lt;p&gt;The idea behind method chaining is this.
+Instead of calling multiple functions on a data frame like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;result = f(g(h(df)))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;you call all your functions in a chain like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;result = df.f().g().h()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This works because many pandas functions work by returning a copy of the dataframe.
+So you can apply multiple functions in order very easily using this pattern.&lt;/p&gt;
+
+&lt;h1 id=&#34;avoid-long-lines-in-pandas:d2b40886fd042ce815011ab74a9d0a94&#34;&gt;Avoid long lines in pandas&lt;/h1&gt;
+
+&lt;p&gt;Another big change you can make is to split your long lines of code into multiple lines.
+You do this by wrapping them in brackets.
+This is the code style that pandas encourages.&lt;/p&gt;
+
+&lt;p&gt;For example, here I&amp;rsquo;ve got a very long line of pandas code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;islands = clean.loc[clean.land_border_length == 0][[&#39;country&#39;, &amp;quot;number_neighbours&amp;quot;]]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Conceptually this is doing something pretty simple.
+It is querying my &lt;code&gt;clean&lt;/code&gt; dataframe,
+finding all the rows where the &lt;code&gt;land_border_length&lt;/code&gt; column is zero,
+and then just selecting the &lt;code&gt;country&lt;/code&gt; and &lt;code&gt;number_neighbours&lt;/code&gt; fields of those rows that match.&lt;/p&gt;
+
+&lt;p&gt;It isn&amp;rsquo;t very easy to read this.
+It is hard to see where one section ends and the next one begins.
+Also, if you write something more complicated than this then you&amp;rsquo;ll get very long lines in your code,
+which might not be the style of python you like to write.&lt;/p&gt;
+
+&lt;p&gt;The first thing that I did to try and make this simpler was to start splitting the code into logical chunks.
+I&amp;rsquo;d do something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;zero_border_length = clean.loc[clean.border_length == 0]
+islands = zero_border_length[[&amp;quot;country&amp;quot;, &amp;quot;number_neighbours&amp;quot;]]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is a bit easier to read, because your code is in sections.
+The downside is that you end up with a lot of unecessary temporary dataframes that you never use again.&lt;/p&gt;
+
+&lt;p&gt;Instead of doing this,
+just wrap your code in brackets.
+The following section of code gives exactly the same results as the previous two sections.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;islands = (
+    clean
+    # select the rows where the `land_border_length` is zero
+    .loc[clean.land_border_length == 0]
+    # only take the country and number_neighbours columns
+    [[&#39;country&#39;, &amp;quot;number_neighbours&amp;quot;]]
+)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I find this much easier to read
+and it doesn&amp;rsquo;t create a lot of temporary data frames.
+This is my favourite way to write pandas.&lt;/p&gt;
+
+&lt;h1 id=&#34;know-your-data-verbs:d2b40886fd042ce815011ab74a9d0a94&#34;&gt;Know your data verbs&lt;/h1&gt;
+
+&lt;p&gt;The other thing that made a difference to my pandas writing was starting to use a different set of functions.
+All these functions take a dataframe,
+do something to the dataframe,
+and then return a copy of the dataframe with the changes applied.
+This makes them perfect for chaining them together,
+wrapping the big long lines in brackets to make them easier to read.&lt;/p&gt;
+
+&lt;p&gt;I think of these as &lt;em&gt;data verbs&lt;/em&gt;,
+because they are operations that you perform on your data.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://dataewan.github.io/data-verb/query&#34;&gt;query&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The query function lets you select subsets of your data frame, filtering just for the rows you want.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dataewan.github.io/data-verb/assign&#34;&gt;assign&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Assign lets you create new columns in your data frame, or alter the values that are there already&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dataewan.github.io/data-verb/rename&#34;&gt;rename&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Rename columns in your data frame&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dataewan.github.io/data-verb/drop&#34;&gt;drop&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Remove columns that you don&amp;rsquo;t want&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dataewan.github.io/data-verb/sort_values&#34;&gt;sort_values&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Orders your dataframe&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dataewan.github.io/data-verb/merge&#34;&gt;merge&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Join two data frames together&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dataewan.github.io/data-verb/groupby&#34;&gt;groupby&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Make your data frame into groups. Apply functions on those groups.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dataewan.github.io/data-verb/pipe&#34;&gt;pipe&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Pass your data frame into a function. Useful if you&amp;rsquo;re chaining together functions that work on data frames with other arguments.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Learning what all these functions do in detail helps make your code a lot more readable.
+If you use these verbs in chains,
+your code starts to look much more like a description in natrual language of the steps you perform on your data.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>books</title>
+      <link>http://dataewan.github.io/books/</link>
+      <pubDate>Sun, 06 Dec 2015 11:13:00 +0000</pubDate>
+      
+      <guid>http://dataewan.github.io/books/</guid>
+      <description>
+
+&lt;h2 id=&#34;python:dbc19c2f13d02e3f5b18602966a5728f&#34;&gt;Python&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://shop.oreilly.com/product/0636920023784.do&#34;&gt;Python for Data Analysis&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;statistics:dbc19c2f13d02e3f5b18602966a5728f&#34;&gt;Statistics&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.statisticsdonewrong.com/&#34;&gt;http://www.statisticsdonewrong.com/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>http://dataewan.github.io/about/</link>
+      <pubDate>Mon, 09 Nov 2015 21:26:18 +0000</pubDate>
+      
+      <guid>http://dataewan.github.io/about/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been working with data for the past 10 years and love what I do.
+I&amp;rsquo;ll be writing down things here that I often forget,
+so it is easy for me to find them again.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/dataewan&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/dataewan&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://dataewan.github.io/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://dataewan.github.io/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

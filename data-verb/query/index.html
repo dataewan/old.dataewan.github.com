@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> dataewan &middot; dataewan</title>
+    <title> Pandas query function &middot; dataewan</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 
     <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -37,6 +37,7 @@ ga('send', 'pageview');
 <div id="layout" class="pure-g">
 
 
+
 <div class="sidebar pure-u-1 pure-u-md-1-4">
     <h1>
         <a href="/">dataewan</a>
@@ -60,47 +61,22 @@ ga('send', 'pageview');
 
 <div class="content pure-u-1 pure-u-sm-3-4 pure-u-lg-2-5">
 
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-            <div class="postsummary">
-                <h2>
-                    <a href="http://dataewan.github.io/post/pandas-magrittr/">Writing tidy pandas</a>
-                </h2>
-                <p>
-                <p>I&rsquo;ve been writing <code>pandas</code> code extensively over the past few months.
-I&rsquo;ve collected a few tips for making your pandas neater,
-easier to understand,
-and make your life a little happier.</p>
+<p><a href="http://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.query.html">query</a>
+performs filtering of the dataframe.
+You give it logical expressions,
+and it gives you back the rows that match that expression.</p>
 
-                <a href="http://dataewan.github.io/post/pandas-magrittr/">[more]</a>
-                </p>
-            </div>
-        
-    
-        
-    
-        
-    
-        
-    
+<p>So this filters my data so that I get the countries with a zero land border length,
+but that also have some neighbours.</p>
+
+<pre><code class="language-python">(
+    clean
+    .query(&quot;land_border_length == 0 &amp; number_neighbours &gt; 0&quot;)
+)
+</code></pre>
 
 </div>
+
 
 
 
