@@ -1,0 +1,156 @@
+{
+  "assetsByChunkName": {
+    "path---techniques-programming": [
+      "path---techniques-programming-a0e39f21c11f6a62c5ab.js",
+      "path---techniques-programming-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-techniques-programming-d-3-index-js": [
+      "component---src-pages-techniques-programming-d-3-index-js-518fc7cebdf85b77fc03.js",
+      "component---src-pages-techniques-programming-d-3-index-js-518fc7cebdf85b77fc03.js.map"
+    ],
+    "component---src-pages-techniques-explaining-things-react-index-js": [
+      "component---src-pages-techniques-explaining-things-react-index-js-7776e3ddc36f70ae9c78.js",
+      "component---src-pages-techniques-explaining-things-react-index-js-7776e3ddc36f70ae9c78.js.map"
+    ],
+    "component---src-pages-techniques-programming-pandas-verbs-sort-values-js": [
+      "component---src-pages-techniques-programming-pandas-verbs-sort-values-js-68dbac50de7a0a382de8.js",
+      "component---src-pages-techniques-programming-pandas-verbs-sort-values-js-68dbac50de7a0a382de8.js.map"
+    ],
+    "path---techniques-programming-pandas-verbs-query": [
+      "path---techniques-programming-pandas-verbs-query-a0e39f21c11f6a62c5ab.js",
+      "path---techniques-programming-pandas-verbs-query-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---techniques-programming-pandas": [
+      "path---techniques-programming-pandas-a0e39f21c11f6a62c5ab.js",
+      "path---techniques-programming-pandas-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-techniques-programming-pandas-verbs-groupby-js": [
+      "component---src-pages-techniques-programming-pandas-verbs-groupby-js-750ab1ade2cb21abff7a.js",
+      "component---src-pages-techniques-programming-pandas-verbs-groupby-js-750ab1ade2cb21abff7a.js.map"
+    ],
+    "path---techniques-programming-pandas-verbs-rename": [
+      "path---techniques-programming-pandas-verbs-rename-a0e39f21c11f6a62c5ab.js",
+      "path---techniques-programming-pandas-verbs-rename-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-7031061865549c165ce5.js",
+      "component---src-pages-index-js-7031061865549c165ce5.js.map"
+    ],
+    "path---techniques-programming-d-3": [
+      "path---techniques-programming-d-3-a0e39f21c11f6a62c5ab.js",
+      "path---techniques-programming-d-3-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "path---techniques-programming-pandas-verbs-sort-values": [
+      "path---techniques-programming-pandas-verbs-sort-values-a0e39f21c11f6a62c5ab.js",
+      "path---techniques-programming-pandas-verbs-sort-values-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---techniques-explaining-things-react": [
+      "path---techniques-explaining-things-react-a0e39f21c11f6a62c5ab.js",
+      "path---techniques-explaining-things-react-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-64a9e52c485f08a0d6fa.js",
+      "component---src-layouts-index-js-64a9e52c485f08a0d6fa.js.map"
+    ],
+    "component---src-pages-techniques-explaining-things-index-js": [
+      "component---src-pages-techniques-explaining-things-index-js-3e7df61adc26900dfc8a.js",
+      "component---src-pages-techniques-explaining-things-index-js-3e7df61adc26900dfc8a.js.map"
+    ],
+    "path---techniques-explaining-things-components": [
+      "path---techniques-explaining-things-components-a0e39f21c11f6a62c5ab.js",
+      "path---techniques-explaining-things-components-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---techniques-programming-pandas-verbs-drop": [
+      "path---techniques-programming-pandas-verbs-drop-a0e39f21c11f6a62c5ab.js",
+      "path---techniques-programming-pandas-verbs-drop-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---techniques-programming-pandas-verbs-pipe": [
+      "path---techniques-programming-pandas-verbs-pipe-a0e39f21c11f6a62c5ab.js",
+      "path---techniques-programming-pandas-verbs-pipe-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-techniques-programming-pandas-verbs-pipe-js": [
+      "component---src-pages-techniques-programming-pandas-verbs-pipe-js-1a422fa6434bd009d3b1.js",
+      "component---src-pages-techniques-programming-pandas-verbs-pipe-js-1a422fa6434bd009d3b1.js.map"
+    ],
+    "path---techniques-explaining-things": [
+      "path---techniques-explaining-things-a0e39f21c11f6a62c5ab.js",
+      "path---techniques-explaining-things-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-cd51d374be13da4bdeeb.js",
+      "component---src-pages-404-js-cd51d374be13da4bdeeb.js.map"
+    ],
+    "commons": [
+      "commons-454e8abaaa572e7d9f87.js",
+      "build-js-styles.css",
+      "commons-454e8abaaa572e7d9f87.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-techniques-programming-pandas-verbs-merge-js": [
+      "component---src-pages-techniques-programming-pandas-verbs-merge-js-a6f660970b7c034b2cc7.js",
+      "component---src-pages-techniques-programming-pandas-verbs-merge-js-a6f660970b7c034b2cc7.js.map"
+    ],
+    "path---techniques-programming-pandas-verbs-merge": [
+      "path---techniques-programming-pandas-verbs-merge-a0e39f21c11f6a62c5ab.js",
+      "path---techniques-programming-pandas-verbs-merge-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-techniques-programming-pandas-verbs-drop-js": [
+      "component---src-pages-techniques-programming-pandas-verbs-drop-js-5197509d33d69b4eab58.js",
+      "component---src-pages-techniques-programming-pandas-verbs-drop-js-5197509d33d69b4eab58.js.map"
+    ],
+    "component---src-pages-techniques-programming-pandas-verbs-assign-js": [
+      "component---src-pages-techniques-programming-pandas-verbs-assign-js-7841e88f31335c284cf2.js",
+      "component---src-pages-techniques-programming-pandas-verbs-assign-js-7841e88f31335c284cf2.js.map"
+    ],
+    "path---techniques-programming-pandas-verbs-groupby": [
+      "path---techniques-programming-pandas-verbs-groupby-a0e39f21c11f6a62c5ab.js",
+      "path---techniques-programming-pandas-verbs-groupby-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-techniques-programming-pandas-verbs-rename-js": [
+      "component---src-pages-techniques-programming-pandas-verbs-rename-js-d48cf26dd7dfbb7fae2f.js",
+      "component---src-pages-techniques-programming-pandas-verbs-rename-js-d48cf26dd7dfbb7fae2f.js.map"
+    ],
+    "app": [
+      "app-1b4d3cb280efbf71bc6d.js",
+      "build-js-styles.css",
+      "app-1b4d3cb280efbf71bc6d.js.map",
+      "build-js-styles.css.map"
+    ],
+    "component---src-pages-techniques-explaining-things-components-index-js": [
+      "component---src-pages-techniques-explaining-things-components-index-js-d187359020ef4c877b52.js",
+      "component---src-pages-techniques-explaining-things-components-index-js-d187359020ef4c877b52.js.map"
+    ],
+    "component---src-pages-techniques-programming-index-js": [
+      "component---src-pages-techniques-programming-index-js-027da2df38aeaf2ed4e8.js",
+      "component---src-pages-techniques-programming-index-js-027da2df38aeaf2ed4e8.js.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-techniques-programming-pandas-verbs-query-js": [
+      "component---src-pages-techniques-programming-pandas-verbs-query-js-2613b3e9a675a9b3ccc6.js",
+      "component---src-pages-techniques-programming-pandas-verbs-query-js-2613b3e9a675a9b3ccc6.js.map"
+    ],
+    "path---techniques-programming-pandas-verbs-assign": [
+      "path---techniques-programming-pandas-verbs-assign-a0e39f21c11f6a62c5ab.js",
+      "path---techniques-programming-pandas-verbs-assign-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-techniques-programming-pandas-index-js": [
+      "component---src-pages-techniques-programming-pandas-index-js-6fa77312c6fbebf8e047.js",
+      "component---src-pages-techniques-programming-pandas-index-js-6fa77312c6fbebf8e047.js.map"
+    ]
+  }
+}

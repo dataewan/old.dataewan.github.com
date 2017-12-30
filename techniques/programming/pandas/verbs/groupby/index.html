@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+ <html><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><link rel="preload" href="/component---src-layouts-index-js-64a9e52c485f08a0d6fa.js" as="script"/><link rel="preload" href="/component---src-pages-techniques-programming-pandas-verbs-groupby-js-750ab1ade2cb21abff7a.js" as="script"/><link rel="preload" href="/path---techniques-programming-pandas-verbs-groupby-a0e39f21c11f6a62c5ab.js" as="script"/><link rel="preload" href="/app-1b4d3cb280efbf71bc6d.js" as="script"/><link rel="preload" href="/commons-454e8abaaa572e7d9f87.js" as="script"/><script id="webpack-manifest">
+            //<![CDATA[
+            window.webpackManifest = {"231608221292675":"app-1b4d3cb280efbf71bc6d.js","162898551421021":"component---src-pages-404-js-cd51d374be13da4bdeeb.js","35783957827783":"component---src-pages-index-js-7031061865549c165ce5.js","124117227127938":"component---src-pages-techniques-explaining-things-index-js-3e7df61adc26900dfc8a.js","239970304685731":"component---src-pages-techniques-programming-index-js-027da2df38aeaf2ed4e8.js","234118892582969":"component---src-pages-techniques-explaining-things-components-index-js-d187359020ef4c877b52.js","21176041556457":"component---src-pages-techniques-explaining-things-react-index-js-7776e3ddc36f70ae9c78.js","15263475050933":"component---src-pages-techniques-programming-d-3-index-js-518fc7cebdf85b77fc03.js","274497920815981":"component---src-pages-techniques-programming-pandas-index-js-6fa77312c6fbebf8e047.js","213532663970930":"component---src-pages-techniques-programming-pandas-verbs-assign-js-7841e88f31335c284cf2.js","205116888891441":"component---src-pages-techniques-programming-pandas-verbs-drop-js-5197509d33d69b4eab58.js","29366768633658":"component---src-pages-techniques-programming-pandas-verbs-groupby-js-750ab1ade2cb21abff7a.js","187810446712651":"component---src-pages-techniques-programming-pandas-verbs-merge-js-a6f660970b7c034b2cc7.js","159481207458299":"component---src-pages-techniques-programming-pandas-verbs-pipe-js-1a422fa6434bd009d3b1.js","264896191400237":"component---src-pages-techniques-programming-pandas-verbs-query-js-2613b3e9a675a9b3ccc6.js","226441094201366":"component---src-pages-techniques-programming-pandas-verbs-rename-js-d48cf26dd7dfbb7fae2f.js","24654593284576":"component---src-pages-techniques-programming-pandas-verbs-sort-values-js-68dbac50de7a0a382de8.js","60335399758886":"path----557518bd178906f8d58a.js","254022195166212":"path---404-a0e39f21c11f6a62c5ab.js","142629428675168":"path---index-a0e39f21c11f6a62c5ab.js","178698757827068":"path---404-html-a0e39f21c11f6a62c5ab.js","159774973892004":"path---techniques-explaining-things-a0e39f21c11f6a62c5ab.js","10074547084799":"path---techniques-programming-a0e39f21c11f6a62c5ab.js","128755388107707":"path---techniques-explaining-things-components-a0e39f21c11f6a62c5ab.js","98649923351531":"path---techniques-explaining-things-react-a0e39f21c11f6a62c5ab.js","38349878666534":"path---techniques-programming-d-3-a0e39f21c11f6a62c5ab.js","29237115166338":"path---techniques-programming-pandas-a0e39f21c11f6a62c5ab.js","273090537116981":"path---techniques-programming-pandas-verbs-assign-a0e39f21c11f6a62c5ab.js","133609101105679":"path---techniques-programming-pandas-verbs-drop-a0e39f21c11f6a62c5ab.js","217723426091541":"path---techniques-programming-pandas-verbs-groupby-a0e39f21c11f6a62c5ab.js","202288103320972":"path---techniques-programming-pandas-verbs-merge-a0e39f21c11f6a62c5ab.js","143678377711526":"path---techniques-programming-pandas-verbs-pipe-a0e39f21c11f6a62c5ab.js","29191315433034":"path---techniques-programming-pandas-verbs-query-a0e39f21c11f6a62c5ab.js","33979684678506":"path---techniques-programming-pandas-verbs-rename-a0e39f21c11f6a62c5ab.js","74933704940831":"path---techniques-programming-pandas-verbs-sort-values-a0e39f21c11f6a62c5ab.js","114276838955818":"component---src-layouts-index-js-64a9e52c485f08a0d6fa.js"}
+            //]]>
+            </script><style id="glamor-styles">.css-1e5a4ri,[data-css-1e5a4ri]{margin-bottom:0.725rem;}.css-1klh8kk,[data-css-1klh8kk]{text-decoration:none;color:black;}.css-oxbm3l,[data-css-oxbm3l]{width:55%;border-bottom:1px black solid;margin-bottom:2.9rem;}.css-1fgf24k,[data-css-1fgf24k]{width:55%;}.css-1n3g0ug,[data-css-1n3g0ug]{float:right;width:30%;font-size:0.70711rem;line-height:1.45rem;}.css-1kkxvhx,[data-css-1kkxvhx]{width:55%;overflow:scroll;}</style><script id="glamor-ids">
+        // <![CDATA[
+        window._glamor = ["1e5a4ri","1klh8kk","oxbm3l","1fgf24k","1n3g0ug","1kkxvhx"]
+        // ]]>
+        </script><title data-react-helmet="true">Things I wish I could remember</title><meta data-react-helmet="true" name="description" content="dataewan things to remember"/><meta data-react-helmet="true" name="keywords" content="notebook, explaination"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.45em 'Constantia','Lucida Bright','Lucidabright','Lucida Serif','Lucida','DejaVu Serif','Bitstream Vera Serif','Liberation Serif','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:'Constantia','Lucida Bright','Lucidabright','Lucida Serif','Lucida','DejaVu Serif','Bitstream Vera Serif','Liberation Serif','Georgia',serif;font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:'Open Sans','Helvetica Neue Light','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:'Open Sans','Helvetica Neue Light','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:'Open Sans','Helvetica Neue Light','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:'Open Sans','Helvetica Neue Light','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:'Open Sans','Helvetica Neue Light','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:'Open Sans','Helvetica Neue Light','Helvetica Neue','Helvetica','Arial',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}ul{margin-left:1.45rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.45rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;font-size:0.85rem;line-height:1.45rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}blockquote{margin-left:1.45rem;margin-right:1.45rem;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.45rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}b{font-weight:bold;}strong{font-weight:bold;}dt{font-weight:bold;}th{font-weight:bold;}li{margin-bottom:calc(1.45rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.45rem;margin-bottom:calc(1.45rem / 2);margin-top:calc(1.45rem / 2);}li > ul{margin-left:1.45rem;margin-bottom:calc(1.45rem / 2);margin-top:calc(1.45rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.45rem / 2);}code{font-size:0.85rem;line-height:1.45rem;}kbd{font-size:0.85rem;line-height:1.45rem;}samp{font-size:0.85rem;line-height:1.45rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:0.96667rem;padding-right:0.96667rem;padding-top:0.725rem;padding-bottom:calc(0.725rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}</style><script>
+  !function(e,t,r){function n(){for(;d[0]&&"loaded"==d[0][f];)c=d.shift(),c[o]=!i.parentNode.insertBefore(c,i)}for(var s,a,c,d=[],i=e.scripts[0],o="onreadystatechange",f="readyState";s=r.shift();)a=e.createElement(t),"async"in i?(a.async=!1,e.head.appendChild(a)):i[f]?(d.push(a),a[o]=n):e.write("<"+t+' src="'+s+'" defer></'+t+">"),a.src=s}(document,"script",[
+  "/commons-454e8abaaa572e7d9f87.js","/app-1b4d3cb280efbf71bc6d.js","/path---techniques-programming-pandas-verbs-groupby-a0e39f21c11f6a62c5ab.js","/component---src-pages-techniques-programming-pandas-verbs-groupby-js-750ab1ade2cb21abff7a.js","/component---src-layouts-index-js-64a9e52c485f08a0d6fa.js"
+])
+  </script><style id="gatsby-inlined-css">path{display:none}body{width:87.5%;margin-left:auto;margin-right:auto;padding-left:12.5%;max-width:1400px;counter-reset:figure}h6.figurelabel:before{counter-increment:figure;content:"Figure " counter(figure)}span.mono{white-space:pre;font-family:monospace}</style></head><body><div id="___gatsby"><div data-reactroot="" data-reactid="1" data-react-checksum="-689908607"><!-- react-empty: 2 --><header class="css-oxbm3l" data-reactid="3"><a class="css-1klh8kk" href="/" data-reactid="4"><h1 class="css-1e5a4ri" data-reactid="5">dataewan</h1></a></header><section data-reactid="6"><h2 id="groupby" data-reactid="7">groupby</h2><div data-reactid="8"><aside class="css-1n3g0ug" data-reactid="9"><a href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.groupby.html" data-reactid="10">pandas documentation</a></aside><p class="css-1fgf24k" data-reactid="11"><span class="mono" data-reactid="12">groupby</span><!-- react-text: 13 --> lets you perform aggregations of your data. It is similar to the SQL <!-- /react-text --><span class="mono" data-reactid="14">GROUP BY</span><!-- react-text: 15 --> operation. I&#x27;ll use the iris dataset to demonstrate, here&#x27;s a sample of that data.<!-- /react-text --></p></div><div class="css-1kkxvhx" data-reactid="16"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>sepal_length</th>
+      <th>sepal_width</th>
+      <th>petal_length</th>
+      <th>petal_width</th>
+      <th>species</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>139</th>
+      <td>6.9</td>
+      <td>3.1</td>
+      <td>5.4</td>
+      <td>2.1</td>
+      <td>virginica</td>
+    </tr>
+    <tr>
+      <th>137</th>
+      <td>6.4</td>
+      <td>3.1</td>
+      <td>5.5</td>
+      <td>1.8</td>
+      <td>virginica</td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td>6.4</td>
+      <td>2.8</td>
+      <td>5.6</td>
+      <td>2.1</td>
+      <td>virginica</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>5.1</td>
+      <td>3.8</td>
+      <td>1.5</td>
+      <td>0.3</td>
+      <td>setosa</td>
+    </tr>
+    <tr>
+      <th>143</th>
+      <td>6.8</td>
+      <td>3.2</td>
+      <td>5.9</td>
+      <td>2.3</td>
+      <td>virginica</td>
+    </tr>
+  </tbody>
+</table></div><div data-reactid="17"><p class="css-1fgf24k" data-reactid="18">Usually perform the grouping by passing in a list of columns that you want to group by. Here I&#x27;ll just group by a single column, but you can easily add in multiple.</p></div><pre class="css-1fgf24k" data-reactid="19"><pre style="color:black;background:none;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;position:relative;margin:.5em 0;overflow:visible;padding:0px;background-color:#fdfdfd;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin-bottom:1em;" data-reactid="20"><code style="color:black;background:none;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;" data-reactid="21"><!-- react-text: 22 -->
+<!-- /react-text --><span style="color:#5F6364;" data-reactid="23"><!-- react-text: 24 -->(<!-- /react-text --></span><!-- react-text: 25 -->
+    df
+    <!-- /react-text --><span style="color:#5F6364;" data-reactid="26"><!-- react-text: 27 -->.<!-- /react-text --></span><!-- react-text: 28 -->groupby<!-- /react-text --><span style="color:#5F6364;" data-reactid="29"><!-- react-text: 30 -->(<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="31"><!-- react-text: 32 -->[<!-- /react-text --></span><span style="color:#2f9c0a;" data-reactid="33"><!-- react-text: 34 -->&#x27;species&#x27;<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="35"><!-- react-text: 36 -->]<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="37"><!-- react-text: 38 -->)<!-- /react-text --></span><!-- react-text: 39 -->
+<!-- /react-text --><span style="color:#5F6364;" data-reactid="40"><!-- react-text: 41 -->)<!-- /react-text --></span><!-- react-text: 42 -->
+
+<!-- /react-text --><span style="color:#7D8B99;" data-reactid="43"><!-- react-text: 44 --># returns &lt;pandas.core.groupby.DataFrameGroupBy object at 0x1065c37f0&gt;<!-- /react-text --></span><!-- react-text: 45 -->
+        <!-- /react-text --></code></pre></pre><div data-reactid="46"><aside class="css-1n3g0ug" data-reactid="47"><a href="https://pandas.pydata.org/pandas-docs/stable/groupby.html" data-reactid="48">pandas documentation</a></aside><p class="css-1fgf24k" data-reactid="49">There is a good section in the pandas documentation about the operations you can perform on a groupby object. I&#x27;m just going to extract the bits that I use a lot and have to look up.</p></div><section data-reactid="50"><h3 id="performingaggregations" data-reactid="51">Performing aggregations</h3><div data-reactid="52"><p class="css-1fgf24k" data-reactid="53">Most frequently you want to aggregate up your group somehow. Here I&#x27;ll take the mean of all the numeric columns in my groups.</p></div><pre class="css-1fgf24k" data-reactid="54"><pre style="color:black;background:none;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;position:relative;margin:.5em 0;overflow:visible;padding:0px;background-color:#fdfdfd;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin-bottom:1em;" data-reactid="55"><code style="color:black;background:none;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;" data-reactid="56"><!-- react-text: 57 -->
+<!-- /react-text --><span style="color:#5F6364;" data-reactid="58"><!-- react-text: 59 -->(<!-- /react-text --></span><!-- react-text: 60 -->
+    df
+    <!-- /react-text --><span style="color:#5F6364;" data-reactid="61"><!-- react-text: 62 -->.<!-- /react-text --></span><!-- react-text: 63 -->groupby<!-- /react-text --><span style="color:#5F6364;" data-reactid="64"><!-- react-text: 65 -->(<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="66"><!-- react-text: 67 -->[<!-- /react-text --></span><span style="color:#2f9c0a;" data-reactid="68"><!-- react-text: 69 -->&#x27;species&#x27;<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="70"><!-- react-text: 71 -->]<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="72"><!-- react-text: 73 -->)<!-- /react-text --></span><!-- react-text: 74 -->
+    <!-- /react-text --><span style="color:#5F6364;" data-reactid="75"><!-- react-text: 76 -->.<!-- /react-text --></span><!-- react-text: 77 -->agg<!-- /react-text --><span style="color:#5F6364;" data-reactid="78"><!-- react-text: 79 -->(<!-- /react-text --></span><!-- react-text: 80 -->np<!-- /react-text --><span style="color:#5F6364;" data-reactid="81"><!-- react-text: 82 -->.<!-- /react-text --></span><!-- react-text: 83 -->mean<!-- /react-text --><span style="color:#5F6364;" data-reactid="84"><!-- react-text: 85 -->)<!-- /react-text --></span><!-- react-text: 86 -->
+<!-- /react-text --><span style="color:#5F6364;" data-reactid="87"><!-- react-text: 88 -->)<!-- /react-text --></span><!-- react-text: 89 -->
+        <!-- /react-text --></code></pre></pre><div class="css-1kkxvhx" data-reactid="90"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>sepal_length</th>
+      <th>sepal_width</th>
+      <th>petal_length</th>
+      <th>petal_width</th>
+    </tr>
+    <tr>
+      <th>species</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>setosa</th>
+      <td>5.006</td>
+      <td>3.428</td>
+      <td>1.462</td>
+      <td>0.246</td>
+    </tr>
+    <tr>
+      <th>versicolor</th>
+      <td>5.936</td>
+      <td>2.770</td>
+      <td>4.260</td>
+      <td>1.326</td>
+    </tr>
+    <tr>
+      <th>virginica</th>
+      <td>6.588</td>
+      <td>2.974</td>
+      <td>5.552</td>
+      <td>2.026</td>
+    </tr>
+  </tbody>
+</table></div><div data-reactid="91"><p class="css-1fgf24k" data-reactid="92">You can also specify particular aggregation functions to different columns in the group. You do this by passing in a dictionary to the agg function. Here I&#x27;ll take the mean of the sepal_length, and take the max of the sepal_width.</p></div><pre class="css-1fgf24k" data-reactid="93"><pre style="color:black;background:none;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;position:relative;margin:.5em 0;overflow:visible;padding:0px;background-color:#fdfdfd;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin-bottom:1em;" data-reactid="94"><code style="color:black;background:none;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;" data-reactid="95"><!-- react-text: 96 -->
+<!-- /react-text --><span style="color:#5F6364;" data-reactid="97"><!-- react-text: 98 -->(<!-- /react-text --></span><!-- react-text: 99 -->
+    df
+    <!-- /react-text --><span style="color:#5F6364;" data-reactid="100"><!-- react-text: 101 -->.<!-- /react-text --></span><!-- react-text: 102 -->groupby<!-- /react-text --><span style="color:#5F6364;" data-reactid="103"><!-- react-text: 104 -->(<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="105"><!-- react-text: 106 -->[<!-- /react-text --></span><span style="color:#2f9c0a;" data-reactid="107"><!-- react-text: 108 -->&#x27;species&#x27;<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="109"><!-- react-text: 110 -->]<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="111"><!-- react-text: 112 -->)<!-- /react-text --></span><!-- react-text: 113 -->
+    <!-- /react-text --><span style="color:#5F6364;" data-reactid="114"><!-- react-text: 115 -->.<!-- /react-text --></span><!-- react-text: 116 -->agg<!-- /react-text --><span style="color:#5F6364;" data-reactid="117"><!-- react-text: 118 -->(<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="119"><!-- react-text: 120 -->{<!-- /react-text --></span><!-- react-text: 121 -->
+        <!-- /react-text --><span style="color:#2f9c0a;" data-reactid="122"><!-- react-text: 123 -->&#x27;sepal_length&#x27;<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="124"><!-- react-text: 125 -->:<!-- /react-text --></span><!-- react-text: 126 --> np<!-- /react-text --><span style="color:#5F6364;" data-reactid="127"><!-- react-text: 128 -->.<!-- /react-text --></span><!-- react-text: 129 -->mean<!-- /react-text --><span style="color:#5F6364;" data-reactid="130"><!-- react-text: 131 -->,<!-- /react-text --></span><!-- react-text: 132 -->
+        <!-- /react-text --><span style="color:#2f9c0a;" data-reactid="133"><!-- react-text: 134 -->&#x27;sepal_width&#x27;<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="135"><!-- react-text: 136 -->:<!-- /react-text --></span><!-- react-text: 137 --> np<!-- /react-text --><span style="color:#5F6364;" data-reactid="138"><!-- react-text: 139 -->.<!-- /react-text --></span><span style="color:#2f9c0a;" data-reactid="140"><!-- react-text: 141 -->max<!-- /react-text --></span><!-- react-text: 142 -->
+    <!-- /react-text --><span style="color:#5F6364;" data-reactid="143"><!-- react-text: 144 -->}<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="145"><!-- react-text: 146 -->)<!-- /react-text --></span><!-- react-text: 147 -->
+<!-- /react-text --><span style="color:#5F6364;" data-reactid="148"><!-- react-text: 149 -->)<!-- /react-text --></span><!-- react-text: 150 -->
+        <!-- /react-text --></code></pre></pre><div class="css-1kkxvhx" data-reactid="151"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>sepal_length</th>
+      <th>sepal_width</th>
+    </tr>
+    <tr>
+      <th>species</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>setosa</th>
+      <td>5.006</td>
+      <td>4.4</td>
+    </tr>
+    <tr>
+      <th>versicolor</th>
+      <td>5.936</td>
+      <td>3.4</td>
+    </tr>
+    <tr>
+      <th>virginica</th>
+      <td>6.588</td>
+      <td>3.8</td>
+    </tr>
+  </tbody>
+</table></div></section><section data-reactid="152"><h3 id="applyingfunctiontoeachgroup" data-reactid="153">Applying function to each group</h3><div data-reactid="154"><aside class="css-1n3g0ug" data-reactid="155"><a href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.core.groupby.GroupBy.transform.html" data-reactid="156">pandas documentation</a></aside><p class="css-1fgf24k" data-reactid="157"><!-- react-text: 158 -->The <!-- /react-text --><span class="mono" data-reactid="159">transform</span><!-- react-text: 160 --> function applies a function over the group and returns a transformed version of that group. The output has the same number of observations as go into the function. I&#x27;ve used it to calculate the <!-- /react-text --><a href="https://en.wikipedia.org/wiki/Standard_score" data-reactid="161">z-score</a><!-- react-text: 162 --> of all the observations in the data frame.<!-- /react-text --></p></div><pre class="css-1fgf24k" data-reactid="163"><pre style="color:black;background:none;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;position:relative;margin:.5em 0;overflow:visible;padding:0px;background-color:#fdfdfd;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin-bottom:1em;" data-reactid="164"><code style="color:black;background:none;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;" data-reactid="165"><!-- react-text: 166 -->
+<!-- /react-text --><span style="color:#5F6364;" data-reactid="167"><!-- react-text: 168 -->(<!-- /react-text --></span><!-- react-text: 169 -->
+    df
+    <!-- /react-text --><span style="color:#5F6364;" data-reactid="170"><!-- react-text: 171 -->.<!-- /react-text --></span><!-- react-text: 172 -->groupby<!-- /react-text --><span style="color:#5F6364;" data-reactid="173"><!-- react-text: 174 -->(<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="175"><!-- react-text: 176 -->[<!-- /react-text --></span><span style="color:#2f9c0a;" data-reactid="177"><!-- react-text: 178 -->&#x27;species&#x27;<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="179"><!-- react-text: 180 -->]<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="181"><!-- react-text: 182 -->)<!-- /react-text --></span><!-- react-text: 183 -->
+    <!-- /react-text --><span style="color:#5F6364;" data-reactid="184"><!-- react-text: 185 -->.<!-- /react-text --></span><!-- react-text: 186 -->transform<!-- /react-text --><span style="color:#5F6364;" data-reactid="187"><!-- react-text: 188 -->(<!-- /react-text --></span><!-- react-text: 189 -->
+        <!-- /react-text --><span style="color:#7D8B99;" data-reactid="190"><!-- react-text: 191 --># formula for the z score<!-- /react-text --></span><!-- react-text: 192 -->
+        <!-- /react-text --><span style="color:#1990b8;" data-reactid="193"><!-- react-text: 194 -->lambda<!-- /react-text --></span><!-- react-text: 195 --> x<!-- /react-text --><span style="color:#5F6364;" data-reactid="196"><!-- react-text: 197 -->:<!-- /react-text --></span><!-- react-text: 198 --> <!-- /react-text --><span style="color:#5F6364;" data-reactid="199"><!-- react-text: 200 -->(<!-- /react-text --></span><!-- react-text: 201 -->x <!-- /react-text --><span style="color:#a67f59;background:rgba(255, 255, 255, 0.5);" data-reactid="202"><!-- react-text: 203 -->-<!-- /react-text --></span><!-- react-text: 204 --> x<!-- /react-text --><span style="color:#5F6364;" data-reactid="205"><!-- react-text: 206 -->.<!-- /react-text --></span><!-- react-text: 207 -->mean<!-- /react-text --><span style="color:#5F6364;" data-reactid="208"><!-- react-text: 209 -->(<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="210"><!-- react-text: 211 -->)<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="212"><!-- react-text: 213 -->)<!-- /react-text --></span><!-- react-text: 214 --> <!-- /react-text --><span style="color:#a67f59;background:rgba(255, 255, 255, 0.5);" data-reactid="215"><!-- react-text: 216 -->/<!-- /react-text --></span><!-- react-text: 217 --> x<!-- /react-text --><span style="color:#5F6364;" data-reactid="218"><!-- react-text: 219 -->.<!-- /react-text --></span><!-- react-text: 220 -->std<!-- /react-text --><span style="color:#5F6364;" data-reactid="221"><!-- react-text: 222 -->(<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="223"><!-- react-text: 224 -->)<!-- /react-text --></span><!-- react-text: 225 -->
+    <!-- /react-text --><span style="color:#5F6364;" data-reactid="226"><!-- react-text: 227 -->)<!-- /react-text --></span><!-- react-text: 228 -->
+<!-- /react-text --><span style="color:#5F6364;" data-reactid="229"><!-- react-text: 230 -->)<!-- /react-text --></span><!-- react-text: 231 -->
+        <!-- /react-text --></code></pre></pre><div class="css-1kkxvhx" data-reactid="232"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>sepal_length</th>
+      <th>sepal_width</th>
+      <th>petal_length</th>
+      <th>petal_width</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.266674</td>
+      <td>0.189941</td>
+      <td>-0.357011</td>
+      <td>-0.436492</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>-0.300718</td>
+      <td>-1.129096</td>
+      <td>-0.357011</td>
+      <td>-0.436492</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>-0.868111</td>
+      <td>-0.601481</td>
+      <td>-0.932836</td>
+      <td>-0.436492</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>-1.151807</td>
+      <td>-0.865288</td>
+      <td>0.218813</td>
+      <td>-0.436492</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>-0.017022</td>
+      <td>0.453749</td>
+      <td>-0.357011</td>
+      <td>-0.436492</td>
+    </tr>
+  </tbody>
+</table></div><div data-reactid="233"><p class="css-1fgf24k" data-reactid="234">To perform more complex aggregations, you usually want to write a function that does that aggregation. It should return a dataframe, a series, or scalar. The apply function will figure out how to join them all back together into a dataframe.</p></div><pre class="css-1fgf24k" data-reactid="235"><pre style="color:black;background:none;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;position:relative;margin:.5em 0;overflow:visible;padding:0px;background-color:#fdfdfd;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin-bottom:1em;" data-reactid="236"><code style="color:black;background:none;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;" data-reactid="237"><!-- react-text: 238 -->
+<!-- /react-text --><span style="color:#1990b8;" data-reactid="239"><!-- react-text: 240 -->def<!-- /react-text --></span><!-- react-text: 241 --> <!-- /react-text --><span style="color:#2f9c0a;" data-reactid="242"><!-- react-text: 243 -->summarise<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="244"><!-- react-text: 245 -->(<!-- /react-text --></span><!-- react-text: 246 -->x<!-- /react-text --><span style="color:#5F6364;" data-reactid="247"><!-- react-text: 248 -->)<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="249"><!-- react-text: 250 -->:<!-- /react-text --></span><!-- react-text: 251 -->
+    <!-- /react-text --><span style="color:#1990b8;" data-reactid="252"><!-- react-text: 253 -->return<!-- /react-text --></span><!-- react-text: 254 --> pd<!-- /react-text --><span style="color:#5F6364;" data-reactid="255"><!-- react-text: 256 -->.<!-- /react-text --></span><!-- react-text: 257 -->Series<!-- /react-text --><span style="color:#5F6364;" data-reactid="258"><!-- react-text: 259 -->(<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="260"><!-- react-text: 261 -->{<!-- /react-text --></span><!-- react-text: 262 -->
+        <!-- /react-text --><span style="color:#2f9c0a;" data-reactid="263"><!-- react-text: 264 -->&#x27;sepal_length_max&#x27;<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="265"><!-- react-text: 266 -->:<!-- /react-text --></span><!-- react-text: 267 --> x<!-- /react-text --><span style="color:#5F6364;" data-reactid="268"><!-- react-text: 269 -->.<!-- /react-text --></span><!-- react-text: 270 -->sepal_length<!-- /react-text --><span style="color:#5F6364;" data-reactid="271"><!-- react-text: 272 -->.<!-- /react-text --></span><span style="color:#2f9c0a;" data-reactid="273"><!-- react-text: 274 -->max<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="275"><!-- react-text: 276 -->(<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="277"><!-- react-text: 278 -->)<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="279"><!-- react-text: 280 -->,<!-- /react-text --></span><!-- react-text: 281 -->
+        <!-- /react-text --><span style="color:#2f9c0a;" data-reactid="282"><!-- react-text: 283 -->&#x27;sepal_length_min&#x27;<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="284"><!-- react-text: 285 -->:<!-- /react-text --></span><!-- react-text: 286 --> x<!-- /react-text --><span style="color:#5F6364;" data-reactid="287"><!-- react-text: 288 -->.<!-- /react-text --></span><!-- react-text: 289 -->sepal_length<!-- /react-text --><span style="color:#5F6364;" data-reactid="290"><!-- react-text: 291 -->.<!-- /react-text --></span><span style="color:#2f9c0a;" data-reactid="292"><!-- react-text: 293 -->min<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="294"><!-- react-text: 295 -->(<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="296"><!-- react-text: 297 -->)<!-- /react-text --></span><!-- react-text: 298 -->
+    <!-- /react-text --><span style="color:#5F6364;" data-reactid="299"><!-- react-text: 300 -->}<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="301"><!-- react-text: 302 -->)<!-- /react-text --></span><!-- react-text: 303 -->
+
+<!-- /react-text --><span style="color:#5F6364;" data-reactid="304"><!-- react-text: 305 -->(<!-- /react-text --></span><!-- react-text: 306 -->
+    df
+    <!-- /react-text --><span style="color:#5F6364;" data-reactid="307"><!-- react-text: 308 -->.<!-- /react-text --></span><!-- react-text: 309 -->groupby<!-- /react-text --><span style="color:#5F6364;" data-reactid="310"><!-- react-text: 311 -->(<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="312"><!-- react-text: 313 -->[<!-- /react-text --></span><span style="color:#2f9c0a;" data-reactid="314"><!-- react-text: 315 -->&#x27;species&#x27;<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="316"><!-- react-text: 317 -->]<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="318"><!-- react-text: 319 -->)<!-- /react-text --></span><!-- react-text: 320 -->
+    <!-- /react-text --><span style="color:#5F6364;" data-reactid="321"><!-- react-text: 322 -->.<!-- /react-text --></span><span style="color:#2f9c0a;" data-reactid="323"><!-- react-text: 324 -->apply<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="325"><!-- react-text: 326 -->(<!-- /react-text --></span><!-- react-text: 327 -->summarise<!-- /react-text --><span style="color:#5F6364;" data-reactid="328"><!-- react-text: 329 -->)<!-- /react-text --></span><!-- react-text: 330 -->
+<!-- /react-text --><span style="color:#5F6364;" data-reactid="331"><!-- react-text: 332 -->)<!-- /react-text --></span><!-- react-text: 333 -->
+
+        <!-- /react-text --></code></pre></pre><div class="css-1kkxvhx" data-reactid="334"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>sepal_length_max</th>
+      <th>sepal_length_min</th>
+    </tr>
+    <tr>
+      <th>species</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>setosa</th>
+      <td>5.8</td>
+      <td>4.3</td>
+    </tr>
+    <tr>
+      <th>versicolor</th>
+      <td>7.0</td>
+      <td>4.9</td>
+    </tr>
+    <tr>
+      <th>virginica</th>
+      <td>7.9</td>
+      <td>4.9</td>
+    </tr>
+  </tbody>
+</table></div><div data-reactid="335"><p class="css-1fgf24k" data-reactid="336">This is very flexible, but will be slower than the aggregate or transform functions. Note that this will apply the function twice to the first group. If you&#x27;re applying a function with side effects, for example writing results out to a file, you might get unexpected results.</p></div></section><section data-reactid="337"><h3 id="groupingbywithoutanindex" data-reactid="338">Grouping by without an index</h3><div data-reactid="339"><p class="css-1fgf24k" data-reactid="340"><!-- react-text: 341 -->When you do a group by, it creates an index on the output from the columns you&#x27;ve grouped by. This can be fiddly for subsequent operations that expect a plain dataframe. Either you can use the <!-- /react-text --><span class="mono" data-reactid="342">reset_index()</span><!-- react-text: 343 --> function to remove the index, or you can pass the <!-- /react-text --><span class="mono" data-reactid="344">as_index=False</span><!-- react-text: 345 --> argument to the groupby.<!-- /react-text --></p></div><pre class="css-1fgf24k" data-reactid="346"><pre style="color:black;background:none;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;position:relative;margin:.5em 0;overflow:visible;padding:0px;background-color:#fdfdfd;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin-bottom:1em;" data-reactid="347"><code style="color:black;background:none;font-family:Consolas, Monaco, &#x27;Andale Mono&#x27;, &#x27;Ubuntu Mono&#x27;, monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;" data-reactid="348"><!-- react-text: 349 -->
+<!-- /react-text --><span style="color:#5F6364;" data-reactid="350"><!-- react-text: 351 -->(<!-- /react-text --></span><!-- react-text: 352 -->
+    df
+    <!-- /react-text --><span style="color:#5F6364;" data-reactid="353"><!-- react-text: 354 -->.<!-- /react-text --></span><!-- react-text: 355 -->groupby<!-- /react-text --><span style="color:#5F6364;" data-reactid="356"><!-- react-text: 357 -->(<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="358"><!-- react-text: 359 -->[<!-- /react-text --></span><span style="color:#2f9c0a;" data-reactid="360"><!-- react-text: 361 -->&#x27;species&#x27;<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="362"><!-- react-text: 363 -->]<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="364"><!-- react-text: 365 -->,<!-- /react-text --></span><!-- react-text: 366 --> as_index<!-- /react-text --><span style="color:#a67f59;background:rgba(255, 255, 255, 0.5);" data-reactid="367"><!-- react-text: 368 -->=<!-- /react-text --></span><span style="color:#c92c2c;" data-reactid="369"><!-- react-text: 370 -->False<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="371"><!-- react-text: 372 -->)<!-- /react-text --></span><!-- react-text: 373 -->
+    <!-- /react-text --><span style="color:#5F6364;" data-reactid="374"><!-- react-text: 375 -->.<!-- /react-text --></span><!-- react-text: 376 -->agg<!-- /react-text --><span style="color:#5F6364;" data-reactid="377"><!-- react-text: 378 -->(<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="379"><!-- react-text: 380 -->{<!-- /react-text --></span><!-- react-text: 381 -->
+        <!-- /react-text --><span style="color:#2f9c0a;" data-reactid="382"><!-- react-text: 383 -->&#x27;sepal_length&#x27;<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="384"><!-- react-text: 385 -->:<!-- /react-text --></span><!-- react-text: 386 --> np<!-- /react-text --><span style="color:#5F6364;" data-reactid="387"><!-- react-text: 388 -->.<!-- /react-text --></span><!-- react-text: 389 -->mean<!-- /react-text --><span style="color:#5F6364;" data-reactid="390"><!-- react-text: 391 -->,<!-- /react-text --></span><!-- react-text: 392 -->
+        <!-- /react-text --><span style="color:#2f9c0a;" data-reactid="393"><!-- react-text: 394 -->&#x27;sepal_width&#x27;<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="395"><!-- react-text: 396 -->:<!-- /react-text --></span><!-- react-text: 397 --> np<!-- /react-text --><span style="color:#5F6364;" data-reactid="398"><!-- react-text: 399 -->.<!-- /react-text --></span><span style="color:#2f9c0a;" data-reactid="400"><!-- react-text: 401 -->max<!-- /react-text --></span><!-- react-text: 402 -->
+    <!-- /react-text --><span style="color:#5F6364;" data-reactid="403"><!-- react-text: 404 -->}<!-- /react-text --></span><span style="color:#5F6364;" data-reactid="405"><!-- react-text: 406 -->)<!-- /react-text --></span><!-- react-text: 407 -->
+<!-- /react-text --><span style="color:#5F6364;" data-reactid="408"><!-- react-text: 409 -->)<!-- /react-text --></span><!-- react-text: 410 -->
+        <!-- /react-text --></code></pre></pre><div class="css-1kkxvhx" data-reactid="411"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>species</th>
+      <th>sepal_length</th>
+      <th>sepal_width</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>setosa</td>
+      <td>5.006</td>
+      <td>4.4</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>versicolor</td>
+      <td>5.936</td>
+      <td>3.4</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>virginica</td>
+      <td>6.588</td>
+      <td>3.8</td>
+    </tr>
+  </tbody>
+</table></div><div data-reactid="412"><p class="css-1fgf24k" data-reactid="413">That looks pretty much the same as the grouping from above, but note that the grouping column (species) doesn&#x27;t appear in the index column any more.</p></div></section></section></div></div><script>
+  function gaOptout(){document.cookie=disableStr+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/',window[disableStr]=!0}var gaProperty='UA-39372029-1',disableStr='ga-disable-'+gaProperty;document.cookie.indexOf(disableStr+'=true')>-1&&(window[disableStr]=!0);
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39372029-1', 'auto');
+  ga('set', 'anonymizeIp', 1);</script></body></html>
