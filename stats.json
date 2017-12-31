@@ -33,8 +33,8 @@
       "path---techniques-programming-pandas-verbs-rename-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-7031061865549c165ce5.js",
-      "component---src-pages-index-js-7031061865549c165ce5.js.map"
+      "component---src-pages-index-js-510c301fdee9ab96aed1.js",
+      "component---src-pages-index-js-510c301fdee9ab96aed1.js.map"
     ],
     "path---techniques-programming-d-3": [
       "path---techniques-programming-d-3-a0e39f21c11f6a62c5ab.js",
@@ -47,6 +47,10 @@
     "path---techniques-programming-pandas-verbs-sort-values": [
       "path---techniques-programming-pandas-verbs-sort-values-a0e39f21c11f6a62c5ab.js",
       "path---techniques-programming-pandas-verbs-sort-values-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-investigations-what-whisky-index-js": [
+      "component---src-pages-investigations-what-whisky-index-js-705aeda3dfe6af5efbe7.js",
+      "component---src-pages-investigations-what-whisky-index-js-705aeda3dfe6af5efbe7.js.map"
     ],
     "path---techniques-explaining-things-react": [
       "path---techniques-explaining-things-react-a0e39f21c11f6a62c5ab.js",
@@ -89,9 +93,9 @@
       "component---src-pages-404-js-cd51d374be13da4bdeeb.js.map"
     ],
     "commons": [
-      "commons-445b089a985a2ad38ea5.js",
+      "commons-274821d43f3475e34724.js",
       "build-js-styles.css",
-      "commons-445b089a985a2ad38ea5.js.map",
+      "commons-274821d43f3475e34724.js.map",
       "build-js-styles.css.map"
     ],
     "path---404-html": [
@@ -123,9 +127,9 @@
       "component---src-pages-techniques-programming-pandas-verbs-rename-js-d48cf26dd7dfbb7fae2f.js.map"
     ],
     "app": [
-      "app-1b4d3cb280efbf71bc6d.js",
+      "app-834f2788c2b3601e757b.js",
       "build-js-styles.css",
-      "app-1b4d3cb280efbf71bc6d.js.map",
+      "app-834f2788c2b3601e757b.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-techniques-explaining-things-components-index-js": [
@@ -147,6 +151,10 @@
     "path---techniques-programming-pandas-verbs-assign": [
       "path---techniques-programming-pandas-verbs-assign-a0e39f21c11f6a62c5ab.js",
       "path---techniques-programming-pandas-verbs-assign-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---investigations-what-whisky": [
+      "path---investigations-what-whisky-a0e39f21c11f6a62c5ab.js",
+      "path---investigations-what-whisky-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-techniques-programming-pandas-index-js": [
       "component---src-pages-techniques-programming-pandas-index-js-6fa77312c6fbebf8e047.js",
