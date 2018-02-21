@@ -1,2 +1,2 @@
-webpackJsonp([0xf85fd874d535],{516:function(t,n){t.exports={pathContext:{}}}});
+webpackJsonp([0xf85fd874d535],{520:function(t,n){t.exports={pathContext:{}}}});
 //# sourceMappingURL=path---techniques-programming-pandas-verbs-assign-a0e39f21c11f6a62c5ab.js.map

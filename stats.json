@@ -33,8 +33,8 @@
       "path---techniques-programming-pandas-verbs-rename-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-510c301fdee9ab96aed1.js",
-      "component---src-pages-index-js-510c301fdee9ab96aed1.js.map"
+      "component---src-pages-index-js-1885632f19a428b97a95.js",
+      "component---src-pages-index-js-1885632f19a428b97a95.js.map"
     ],
     "path---techniques-programming-d-3": [
       "path---techniques-programming-d-3-a0e39f21c11f6a62c5ab.js",
@@ -71,6 +71,10 @@
     "path---techniques-programming-pandas-verbs-drop": [
       "path---techniques-programming-pandas-verbs-drop-a0e39f21c11f6a62c5ab.js",
       "path---techniques-programming-pandas-verbs-drop-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-projects-papa-baiden-index-js": [
+      "component---src-pages-projects-papa-baiden-index-js-6b26198f1b033d9d94ba.js",
+      "component---src-pages-projects-papa-baiden-index-js-6b26198f1b033d9d94ba.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -127,9 +131,9 @@
       "component---src-pages-techniques-programming-pandas-verbs-rename-js-d48cf26dd7dfbb7fae2f.js.map"
     ],
     "app": [
-      "app-834f2788c2b3601e757b.js",
+      "app-79403d72c0042afbbb1b.js",
       "build-js-styles.css",
-      "app-834f2788c2b3601e757b.js.map",
+      "app-79403d72c0042afbbb1b.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-techniques-explaining-things-components-index-js": [
@@ -143,6 +147,10 @@
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---projects-papa-baiden": [
+      "path---projects-papa-baiden-a0e39f21c11f6a62c5ab.js",
+      "path---projects-papa-baiden-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-techniques-programming-pandas-verbs-query-js": [
       "component---src-pages-techniques-programming-pandas-verbs-query-js-2613b3e9a675a9b3ccc6.js",
