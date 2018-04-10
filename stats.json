@@ -5,8 +5,8 @@
       "path---techniques-programming-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-techniques-programming-d-3-index-js": [
-      "component---src-pages-techniques-programming-d-3-index-js-518fc7cebdf85b77fc03.js",
-      "component---src-pages-techniques-programming-d-3-index-js-518fc7cebdf85b77fc03.js.map"
+      "component---src-pages-techniques-programming-d-3-index-js-5e7dde543ad65f979f7a.js",
+      "component---src-pages-techniques-programming-d-3-index-js-5e7dde543ad65f979f7a.js.map"
     ],
     "component---src-pages-techniques-explaining-things-react-index-js": [
       "component---src-pages-techniques-explaining-things-react-index-js-7776e3ddc36f70ae9c78.js",
@@ -49,8 +49,8 @@
       "path---techniques-programming-pandas-verbs-sort-values-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-investigations-what-whisky-index-js": [
-      "component---src-pages-investigations-what-whisky-index-js-705aeda3dfe6af5efbe7.js",
-      "component---src-pages-investigations-what-whisky-index-js-705aeda3dfe6af5efbe7.js.map"
+      "component---src-pages-investigations-what-whisky-index-js-3fb2570387acec7fed63.js",
+      "component---src-pages-investigations-what-whisky-index-js-3fb2570387acec7fed63.js.map"
     ],
     "path---techniques-explaining-things-react": [
       "path---techniques-explaining-things-react-a0e39f21c11f6a62c5ab.js",
@@ -97,9 +97,9 @@
       "component---src-pages-404-js-cd51d374be13da4bdeeb.js.map"
     ],
     "commons": [
-      "commons-274821d43f3475e34724.js",
+      "commons-b15b729dbf337c1217b3.js",
       "build-js-styles.css",
-      "commons-274821d43f3475e34724.js.map",
+      "commons-b15b729dbf337c1217b3.js.map",
       "build-js-styles.css.map"
     ],
     "path---404-html": [
@@ -131,9 +131,9 @@
       "component---src-pages-techniques-programming-pandas-verbs-rename-js-d48cf26dd7dfbb7fae2f.js.map"
     ],
     "app": [
-      "app-79403d72c0042afbbb1b.js",
+      "app-2e72eafcf00d08d34660.js",
       "build-js-styles.css",
-      "app-79403d72c0042afbbb1b.js.map",
+      "app-2e72eafcf00d08d34660.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-techniques-explaining-things-components-index-js": [

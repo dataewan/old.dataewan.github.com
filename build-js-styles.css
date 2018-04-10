@@ -1,2 +1,2 @@
-path{display:none}
+svg.map{background-color:#e3f6fc}path{display:block}path.scotland{display:block;stroke:none;fill:#5cad9f}path.river{fill:none;stroke-width:.9;stroke:#10678c;display:block}circle{stroke-width:.5;stroke:#fff}path.radial{fill:#ddd6c0}path.radial,path.radialcluster,path.radialoverall{display:block}text.radiallabel{fill:#000}div.information{width:30%;float:left}path{display:none}
 /*# sourceMappingURL=build-js-styles.css.map*/
