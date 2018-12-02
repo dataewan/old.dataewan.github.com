@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[18],{144:function(n,t,e){"use strict";e.r(t);var r=e(6),o=e.n(r),u=e(0),i=e.n(u),p=function(n){function t(){return n.apply(this,arguments)||this}return o()(t,n),t.prototype.render=function(){return i.a.createElement("article",null)},t}(u.Component);t.default=p}}]);
+//# sourceMappingURL=component---src-pages-techniques-explaining-things-react-index-js-61a0a789a9551ff9a2f5.js.map
