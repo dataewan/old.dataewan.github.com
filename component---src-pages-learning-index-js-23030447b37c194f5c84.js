@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{pWfZ:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),s=n.n(a),c=(n("+ZDr"),n("Kvkj"));t.default=function(){return s.a.createElement(c.e,null,s.a.createElement(c.g,null,s.a.createElement(c.f,{to:"learning/statistics",desc:"Brushing up on my statistics"})))}}}]);
+//# sourceMappingURL=component---src-pages-learning-index-js-23030447b37c194f5c84.js.map

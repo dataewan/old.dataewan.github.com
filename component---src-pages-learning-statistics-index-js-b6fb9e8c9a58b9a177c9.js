@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[14],{"4v1q":function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),r=t.n(a),c=(t("+ZDr"),t("Kvkj"));n.default=function(){return r.a.createElement(c.e,null,r.a.createElement(c.g,null,r.a.createElement(c.f,{to:"/learning/statistics/bayesian-inference",desc:"How does Bayesian inference work"})))}}}]);
+//# sourceMappingURL=component---src-pages-learning-statistics-index-js-b6fb9e8c9a58b9a177c9.js.map
